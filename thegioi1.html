@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>thế giới </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Xung đột Nga - Ukraine ngày 13/4: Ukraine huy động hàng trăm kíp lái máy bay không người lái đến sát biên giới
+      Nga</h1>
+    <p><strong>Tác giả:</strong> Minh Hạnh Theo Avia Pro, Tass, RT </p>
+    <p><strong>Ngày đăng:</strong> 13/04/2025 | 12:41</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+    <p>TPO - Trang tin Avia Pro cho biết, sự hiện diện của lực lượng Ukraine ở hướng Belgorod đã gia tăng đáng kể, khi
+      một nhóm gồm hơn 200 kíp điều khiển máy bay không người lái (UAV) tấn công được điều đến tiền tuyến. </p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://image.tienphong.vn/w645/Uploaded/2025/uqvppivp/2025_04_13/fk42ywmquvnqbds2nqwgyfssyy-2961-7602.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>(Ảnh: Reuters) </em></figcaption>
+    </figure>
+
+    <h2>Ukraine tăng cường tấn công bằng máy bay không người lái</h2>
+    <p>Việc tập trung hơn 200 kíp điều khiển máy bay không người lái ở gần vùng biên giới được xem là động thái chưa
+      từng có của Ukraine. Các chuyên gia nhận định, đây có thể là một phần trong chiến thuật mới nhằm gây áp lực lên
+      hàng phòng thủ của Nga, đặc biệt tại tỉnh <strong>Belgorod</strong> – khu vực thường xuyên hứng chịu các đợt tấn
+      công xuyên biên giới.</p>
+
+    <p>Lực lượng vũ trang Ukraine hiện đang tận dụng lợi thế công nghệ với các loại máy bay không người lái mang theo
+      thiết bị nổ, có thể hoạt động ở tầm xa, khiến việc phát hiện và ngăn chặn trở nên khó khăn hơn. Điều này buộc Nga
+      phải nhanh chóng nâng cao năng lực tác chiến điện tử và phòng không để bảo vệ các điểm trọng yếu và khu dân cư.
+    </p>
+
+    <h2>Ukraine gia hạn thiết quân luật thêm 90 ngày</h2>
+    <p>Ngày 12/4, nghị sĩ <strong>Yaroslav Zheleznyak</strong> cho biết Quốc hội Ukraine sẽ thông qua quyết định
+      <strong>gia hạn thiết quân luật thêm 90 ngày</strong>. Thời hạn mới bắt đầu từ <strong>ngày 9/5</strong> và kết
+      thúc vào <strong>ngày 6/8</strong>.</p>
+    <h2>Ukraine bác bỏ tin tổ chức bầu cử bất ngờ</h2>
+    <p>Trong phát biểu mới nhất trước truyền thông, ông <strong>David Arakhamia</strong> – lãnh đạo đảng <em>Đầy tớ của
+        Nhân dân</em> tại quốc hội Ukraine – đã lên tiếng bác bỏ các báo cáo cho rằng Kiev đang có kế hoạch tiến hành
+      một cuộc bỏ phiếu bất ngờ nhằm khiến phe đối lập trở tay không kịp.</p>
+
+    <p>“Tất cả các đảng phái và nhóm trong quốc hội đều <strong>đồng thuận rằng bầu cử chỉ nên diễn ra sau sáu tháng kể
+        từ khi lệnh thiết quân luật được dỡ bỏ</strong>,” ông Arakhamia khẳng định, nhằm trấn an dư luận và bảo đảm tính
+      minh bạch trong quá trình chuyển tiếp chính trị của Ukraine.</p>
+
+    <h2>Điện Kremlin bác tin có binh sĩ Trung Quốc ở tiền tuyến</h2>
+    <p>Phát ngôn viên Điện Kremlin <strong>Dmitry Peskov</strong> đã chính thức lên tiếng phủ nhận tin đồn về việc binh
+      sĩ Trung Quốc xuất hiện ở tiền tuyến tại Ukraine. Ông nhấn mạnh: <em>“Không có bất kỳ binh sĩ Trung Quốc nào tham
+        gia chiến đấu cùng lực lượng Nga ở Ukraine. Thông tin này là không chính xác.”</em></p>
+
+    <p>Tuyên bố được đưa ra sau khi một số nguồn tin phương Tây đặt nghi vấn về sự hiện diện của binh sĩ nước ngoài
+      trong các hoạt động quân sự tại vùng xung đột. Nga khẳng định, chiến dịch quân sự của họ hoàn toàn dựa vào lực
+      lượng vũ trang trong nước.</p>
+
+    <p>Điều này đồng nghĩa với việc Ukraine chưa thể tổ chức bầu cử trong thời gian tới. Nhiệm kỳ tổng thống của ông
+      <strong>Volodymyr Zelensky</strong> đã kết thúc từ tháng 5 năm 2024, tuy nhiên ông viện dẫn luật thiết quân luật
+      để trì hoãn cuộc bầu cử, nhằm duy trì sự ổn định trong bối cảnh xung đột leo thang.</p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://image.tienphong.vn/w645/Uploaded/2025/uqvppivp/2025_04_13/fk42ywmquvnqbds2nqwgyfssyy-2961-7602.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>(Ảnh: Reuters) </em></figcaption>
+    </figure>
+
+
+    <h2>Nga và Trung Quốc bác tin công dân Trung Quốc tham chiến tại Ukraine</h2>
+    <p>Trong tuyên bố mới nhất, <strong>Thứ trưởng Ngoại giao Nga Andrey Rudenko</strong> đã bác bỏ các báo cáo cho rằng
+      công dân Trung Quốc đang chiến đấu cùng lực lượng Nga ở Ukraine.</p>
+
+    <p>“Tôi có thể nói rằng đây là <strong>thông tin sai sự thật</strong>,” ông Rudenko khẳng định. “<em>Lập trường của
+        Trung Quốc về việc giải quyết xung đột ở Ukraine khá cân bằng và chúng tôi biết ơn những người bạn của mình vì
+        điều đó</em>.”</p>
+
+    <p>Trước đó, <strong>Bộ Ngoại giao Trung Quốc</strong> cũng phủ nhận việc cử binh sĩ tham chiến, đồng thời kêu gọi
+      công dân nước này không tham gia vào bất kỳ hoạt động quân sự nào liên quan đến cuộc xung đột tại Ukraine.</p>
+
+    <h2>Rộ tin Ukraine mất tiêm kích F-16 thứ hai tại Sumy</h2>
+    <p>Ngày 12/4, truyền thông Nga đưa tin một chiếc <strong>máy bay chiến đấu F-16 của Ukraine</strong> đã bị rơi tại
+      khu vực <strong>Sumy</strong> – nơi có vị trí chiến lược gần biên giới Nga. Sự cố được cho là khiến một phi công
+      Ukraine thiệt mạng.</p>
+
+    <p>Theo nguồn tin từ <em>Avia.pro</em>, chiếc F-16 gặp nạn khi đang cố gắng đánh chặn một mục tiêu trên không. Trong
+      quá trình thực hiện nhiệm vụ, hệ thống liên lạc của máy bay đã bị ngắt kết nối, dẫn đến vụ rơi. Hiện chưa có xác
+      nhận chính thức từ phía Ukraine về thông tin này.</p>
+
+
+
+
+    <figure style="text-align: center;">
+      <img src="https://image.tienphong.vn/w645/Uploaded/2025/uqvppivp/2025_04_13/f-16-9187-6512-20-35.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>(Ảnh: Reuters) </em></figcaption>
+    </figure>
+    <h2>Phi công Ukraine thiệt mạng khi làm nhiệm vụ trên tiêm kích F-16</h2>
+    <p>Không quân Ukraine ngày 12/4 xác nhận <strong>phi công Pavlo Ivanov</strong>, 26 tuổi, đã thiệt mạng khi thực
+      hiện nhiệm vụ chiến đấu trên tiêm kích F-16. Một <strong>ủy ban liên ngành</strong> đang tiến hành điều tra để làm
+      rõ các tình tiết liên quan đến vụ tai nạn.</p>
+
+    <p>“<em>Các phi công F-16 đang thực hiện nhiệm vụ chiến đấu gần như mỗi ngày tại nhiều mặt trận khác nhau, trong
+        điều kiện vô cùng khó khăn. Họ yểm trợ cho các nhóm tấn công trên không và tấn công các mục tiêu của đối
+        phương</em>”, Không quân Ukraine cho biết trong thông cáo. Tuy nhiên, <strong>thời gian, địa điểm và tình trạng
+        của chiếc máy bay</strong> vẫn chưa được công bố cụ thể.</p>
+
+    <h3>Tổn thất thứ hai của Ukraine liên quan đến tiêm kích F-16</h3>
+    <p>Đây được xem là <strong>vụ tai nạn thứ hai</strong> liên quan đến tiêm kích F-16 tại Ukraine. Trước đó, vào tháng
+      8/2024, Ukraine xác nhận đã mất chiếc F-16 đầu tiên ngay trong lần đầu tham chiến.</p>
+
+    <p>Hiện Ukraine đã nhận được một số lượng đáng kể máy bay F-16 từ các đối tác phương Tây. <strong>Bỉ</strong> là một
+      trong những quốc gia đã cam kết viện trợ, với hai máy bay dùng làm phụ tùng thay thế trong năm 2025, và hai máy
+      bay khác sẽ chuyển giao vào năm 2026.</p>
+
+    <h3>Giới thiệu chiến đấu cơ F-16</h3>
+    <p><strong>F-16 Fighting Falcon</strong> là máy bay chiến đấu đa năng hạng nhẹ thế hệ thứ tư do <strong>Lockheed
+        Martin</strong> phát triển. Máy bay này được thiết kế để thực hiện nhiều loại nhiệm vụ, bao gồm tấn công mục
+      tiêu mặt đất và đánh chặn trên không.</p>
+
+    <ul>
+      <li><strong>Động cơ:</strong> Pratt & Whitney F100-PW-200, lực đẩy tối đa 106 kN (có đốt sau)</li>
+      <li><strong>Tốc độ tối đa:</strong> Mach 2 (~2.400 km/h)</li>
+      <li><strong>Tầm bay:</strong> Khoảng 4.200 km</li>
+      <li><strong>Trang bị:</strong> 11 giá treo vũ khí, có thể mang tên lửa không đối không, không đối đất và các loại
+        bom dẫn đường thông minh</li>
+    </ul>
+
+
+  </div>
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

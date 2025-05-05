@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>trong nước </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cssbaochung.css">
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Vụ sản xuất sữa bột giả, thu lợi 500 tỷ đồng: Tạm giam các giám đốc</h1>
+    <p><strong>Tác giả:</strong> Tiến Dũng</p>
+    <p><strong>Ngày đăng:</strong>Chủ Nhật, 13/04/2025 - 08:16</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+    <p>Bộ Công an vừa thông tin về vụ triệt phá đường dây sản xuất sữa bột giả quy mô lớn xảy ra tại Hà Nội và nhiều
+      tỉnh, thành phố trên cả nước, gây thiệt hại hơn 28 tỷ đồng cho ngân sách nhà nước.</p>
+
+    <p>Ngày 13/4, Cơ quan CSĐT Bộ Công an đang tiến hành điều tra vụ án "Sản xuất, buôn bán hàng giả là thực phẩm" xảy
+      ra tại Công ty CP Dược quốc tế Rance Pharma, Công ty CP Dược dinh dưỡng Hacofood Group và một số cơ quan, tổ chức
+      có liên quan trên địa bàn TP Hà Nội và nhiều tỉnh, thành phố khác.</p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/4/13/s2-1744434397122-30604.jpg?width=0&s=dUs-QDmb232ACebQeVdP-A"
+        alt="Ảnh mô tả">
+      <figcaption><em>Công nhân đóng hộp thành phẩm sữa bột tại cơ sở sản xuất, chuẩn bị tung ra thị trường. Ảnh: Báo
+          Công an nhân dân</em></figcaption>
+    </figure>
+    <h1>Khởi tố 8 bị can</h1>
+
+    <p>Ngày 10/4, Cơ quan CSĐT đã ra các quyết định khởi tố bị can, lệnh bắt tạm giam 4 tháng đối với:</p>
+
+    <p>Hoàng Mạnh Hà (SN 1979), cổ đông góp vốn, Giám đốc, người đại diện theo pháp luật của Công ty Rance Pharma (từ
+      tháng 8/2021 - 8/2024), đồng thời là cổ đông góp vốn Công ty Hacofood.</p>
+
+    <p>Vũ Mạnh Cường (SN 1979), cổ đông góp vốn, Giám đốc, người đại diện theo pháp luật của Công ty Hacofood (từ tháng
+      4/2022 - 10/2024), đồng thời là cổ đông góp vốn Công ty Rance Pharma.</p>
+
+    <p>Đặng Trung Kiên (SN 1988), cổ đông góp vốn, Phó Giám đốc Công ty Rance Pharma và Công ty Hacofood.</p>
+
+    <p>3 người trên bị khởi tố về các tội: "Sản xuất, buôn bán hàng giả là thực phẩm" và "Vi phạm quy định về kế toán
+      gây hậu quả nghiêm trọng".</p>
+
+    <p>Hồ Sỹ Ý (SN 1988), cổ đông góp vốn Công ty Rance Pharma và Công ty Hacofood, người điều hành nhà máy sản xuất, bị
+      khởi tố về tội "Sản xuất, buôn bán hàng giả là thực phẩm".</p>
+
+    <p>Nguyễn Thành Luân (SN 1987), cổ đông góp vốn Công ty Rance Pharma và Công ty Hacofood, Giám đốc, người đại diện
+      theo pháp luật của Công ty Rance Pharma từ tháng 8/2024.</p>
+
+    <p>Nguyễn Văn Tú (SN 1981), cổ đông góp vốn Công ty Rance Pharma và Công ty Hacofood, Giám đốc, người đại diện theo
+      pháp luật của Công ty Hacofood từ tháng 10/2024.</p>
+
+    <p>Nguyễn Thu Thủy (SN 1970), Kế toán trưởng của hai Công ty Rance Pharma và Công ty Hacofood.</p>
+
+    <p>Luân, Tú, Thủy bị khởi tố về tội "Vi phạm quy định về kế toán gây hậu quả nghiêm trọng".</p>
+
+    <p>Ngoài ra, Nguyễn Thị Mai Hương, nhân viên kế toán kiêm thủ quỹ của Công ty Rance Pharma và Công ty Hacofood, bị
+      khởi tố về cùng tội danh "Vi phạm quy định về kế toán gây hậu quả nghiêm trọng", bị áp dụng biện pháp ngăn chặn
+      cấm đi khỏi nơi cư trú.</p>
+
+    <p>Sau khi được VKSND tối cao phê chuẩn, ngày 11/4, Cơ quan CSĐT Bộ Công an đã thi hành các quyết định và lệnh tố
+      tụng theo đúng quy định của pháp luật.</p>
+
+    <p><strong>Gây thiệt hại hơn 28 tỷ đồng</strong></p>
+
+    <p>Theo cơ quan điều tra, trong quá trình khám xét tại 19 địa điểm bao gồm nhà máy sản xuất và văn phòng làm việc
+      của các bị can, đã thu giữ 84 loại sản phẩm sữa bột khác nhau, tổng số 26.740 lon thuộc 90 lô sản xuất, cùng nhiều
+      tài liệu và vật chứng phục vụ công tác điều tra.</p>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/4/13/s7-1744434538615-30605.jpg?width=0&s=67xP-jj2bFJirthaH1JYUg"
+        alt="Ảnh mô tả">
+      <figcaption><em>Hàng nghìn hộp sữa bột giả bị thu giữ để phục vụ điều tra. Ảnh: Báo Công an nhân dân</em>
+      </figcaption>
+    </figure>
+    <p>Bước đầu, cơ quan điều tra xác định từ năm 2021 đến nay, Công ty Rance Pharma và Công ty Hacofood đã không ghi
+      nhận đầy đủ doanh thu vào sổ sách kế toán, trốn kê khai thuế, gây thiệt hại cho ngân sách nhà nước hơn 28 tỷ đồng.
+    </p>
+
+    <p>Như đã đưa tin, từ năm 2021, nhận thấy nhu cầu tiêu thụ các sản phẩm dinh dưỡng, thực phẩm bổ sung, đặc biệt là
+      sữa bột trên thị trường trong nước tăng cao, các bị can đã thành lập công ty để tổ chức sản xuất, kinh doanh và
+      tiêu thụ sữa bột giả.</p>
+
+    <p>Đến nay, nhóm này đã sản xuất tới 573 nhãn hiệu sữa bột các loại, hướng đến đối tượng tiêu dùng là người bị tiểu
+      đường, suy thận, trẻ sinh non, thiếu tháng và phụ nữ mang thai.</p>
+
+    <p>Dù công bố thành phần sản phẩm có chứa chiết xuất tổ yến, đông trùng hạ thảo, bột mắc ca, bột óc chó... nhưng
+      thực tế sản phẩm không chứa các thành phần này mà chỉ sử dụng một số nguyên liệu thông thường cùng phụ gia.</p>
+
+    <p>Kết quả giám định cho thấy một số sản phẩm sữa bột có chỉ tiêu chất lượng đạt dưới 70% so với mức công bố, đủ căn
+      cứ để xác định là hàng giả.</p>
+
+    <p>Trong vòng 4 năm (từ 2021 đến nay), các bị can đã thông qua nhiều công ty để tiêu thụ sữa bột giả ra thị trường,
+      thu lợi bất chính gần 500 tỷ đồng.</p>
+
+
+  </div>
+
+
+
+
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

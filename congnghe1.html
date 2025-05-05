@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>công nghệ </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+  <div class="divider-bar"></div>
+  <div class="tieude">
+    <h1>Có nên sử dụng chế độ nguồn điện thấp trên iPhone?</h1>
+    <p><strong>Tác giả:</strong> CTV Kiến An/VOV.VN</p>
+    <p><strong>Ngày đăng:</strong>Chủ Nhật, 07:00, 13/04/2025</p>
+  </div>
+  <div class="baibao">
+    <p>VOV.VN - Chế độ nguồn điện thấp là một trong những tính năng nổi bật của iPhone nhằm mục đích kéo dài thời gian
+      sử dụng pin trong những tình huống khẩn cấp.</p>
+    <p>Với chế độ nguồn điện thấp, iPhone có thể tiếp tục hoạt động thêm một thời gian dài khi pin giảm xuống dưới 20%.
+      Tuy nhiên, nhiều người dùng hiện nay đã chọn kích hoạt chế độ này liên tục, ngay cả khi pin vẫn còn ở mức 100%.
+      Vậy điều này liệu có hợp lý? Người dùng sẽ bỏ lỡ những điều gì khi luôn giữ điện thoại hoạt động ở chế độ này?</p>
+    <figure style="text-align: center;">
+      <img src="https://media.vov.vn/sites/default/files/styles/large_watermark/public/2025-04/1_56.jpg" alt="Ảnh mô tả"
+        width="800">
+      <figcaption><em>Chế độ nguồn điện thấp có những giới hạn mà người dùng iPhone cần biết trước khi kích hoạt</em>
+      </figcaption>
+    </figure>
+    <p>Chế độ nguồn điện thấp hoạt động bằng cách giới hạn một số quy trình hệ thống nhằm giảm mức tiêu thụ năng lượng.
+      Cụ thể, chế độ này sẽ vô hiệu hóa các cập nhật trong nền, hạn chế hiệu ứng hình ảnh, dừng một số tác vụ tự động và
+      giảm tốc độ bộ xử lý. Mặc dù điều này có thể ảnh hưởng đến hiệu suất của một số ứng dụng nhưng hầu hết người dùng
+      không nhận thấy sự khác biệt trong quá trình sử dụng hàng ngày.</p>
+
+    <p>Điều thú vị là, nhiều người dùng cho biết iPhone của họ tiêu thụ ít pin hơn khi chế độ này luôn được bật, ngay cả
+      khi sử dụng nhiều. Điều này là do hệ thống ngừng tiêu tốn năng lượng cho các tác vụ không cần thiết như kiểm tra
+      email hay đồng bộ hóa tệp trong iCloud. Tuy nhiên, việc này cũng có những hệ quả nhất định.</p>
+
+    <p><strong>Những nhược điểm đối với iPhone khi chạy ở chế độ nguồn điện thấp</strong></p>
+
+    <p>Một trong những nhược điểm là iPhone có thể trở nên kém thông minh. Người dùng có thể nhận thấy thông báo từ các
+      ứng dụng như Lịch, Thư hay Tin nhắn đến muộn hoặc không xuất hiện cho đến khi mở ứng dụng. Ngoài ra, một số phím
+      tắt tự động có thể không hoạt động do hệ thống ưu tiên tiết kiệm năng lượng. Hiệu suất đồ họa cũng bị giảm, mặc dù
+      có thể không ảnh hưởng đến nhiều người nhưng vẫn là một hạn chế.</p>
+    <p>Chế độ nguồn điện thấp cũng thay đổi hành vi của hệ thống mà không có cảnh báo. Ví dụ, nó có thể chặn đồng bộ hóa
+      và tải ảnh, video trong nền, hoặc giảm tốc độ làm mới trên các mẫu iPhone cao cấp như iPhone 13 Pro. Điều này có
+      thể dẫn đến trải nghiệm sử dụng kém mượt mà hơn, đặc biệt trên các thiết bị mạnh mẽ.</p>
+    <p>Vậy khi nào người dùng nên kích hoạt chế độ này? Về cơ bản, nếu ưu tiên của người dùng là kéo dài thời gian sử
+      dụng pin và không ngại hy sinh một số tính năng tự động, việc bật chế độ này liên tục có thể là lựa chọn hợp lý.
+      Nhiều người dùng iPhone cũ cho biết điều này giúp họ tránh phải sạc thiết bị nhiều lần trong ngày. Tuy nhiên, với
+      những người sở hữu iPhone mới, có hiệu suất tốt và dung lượng pin cao, việc này có thể làm giảm tính linh hoạt và
+      an toàn của hệ thống.</p>
+    <p>Apple không khuyến khích việc sử dụng chế độ nguồn điện thấp liên tục. Khi kích hoạt chế độ này, hệ thống sẽ cảnh
+      báo rằng nó chỉ nên được sử dụng khi pin yếu. Tuy nhiên, người dùng vẫn có thể sử dụng tính năng này theo ý muốn,
+      miễn là họ hiểu rõ những tác động của nó.</p>
+
+  </div>
+  
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .login-text:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghê</button></a></th>
+  </table>
+  <div class="divider-bar"></div>
+  <br>
+  <br>
+  <div class="login-wrapper">
+    <div class="login-container">
+      <h1>Đăng nhập</h1>
+      <form action="/login" method="POST">
+        <div class="form-group-login">
+          <label class="input-signin" for="username">Tên đăng nhập</label>
+          <input type="text" id="username" name="username" placeholder="Tên người dùng..." required>
+        </div>
+        <div class="form-group-login">
+          <label class="input-signin" for="password">Mật khẩu</label>
+          <input type="password" id="password" name="password" placeholder="Mật khẩu..." required>
+        </div>
+        <div class="remember">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Nhớ tôi</label>
+        </div>
+        <div id="signin-submit">
+          <button class="signin-submit" type="submit">Đăng nhập</button>
+        </div>
+        <br>
+        <div class="register-link">
+          <a class="login-text" href="register.html">Chưa có tài khoản?</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social-login">
+          <p>Hoặc đăng nhập</p>
+          <div class="social-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+              alt="Google">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+
+</html>

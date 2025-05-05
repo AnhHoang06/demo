@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sức khỏe</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+  <div class="tieude">
+    <h1>Nước cốt chanh có thực sự giúp “thải độc“?</h1>
+    <p><strong>Tác giả:</strong> Bình Nguyên</p>
+    <p><strong>Ngày đăng:</strong>07:30 09/04/2025</p>
+  </div>
+  <div class="baibao">
+
+
+    <p>Gần đây, trên các nền tảng mạng xã hội, xu hướng uống nước cốt chanh vào buổi sáng với số lượng lớn được lan
+      truyền rộng rãi như một phương pháp "thải độc" cơ thể.</p>
+
+    <p>Dù chanh là một nguyên liệu tự nhiên và an toàn ở mức độ vừa phải, việc uống nước cốt chanh với lượng lớn hoặc
+      không đúng cách có thể gây ra một số vấn đề sức khỏe. Cụ thể:</p>
+
+    <p>Tổn thương men răng: Axit citric trong chanh có tính ăn mòn cao. Uống nước cốt chanh nguyên chất hoặc quá đậm đặc
+      thường xuyên mà không pha loãng có thể làm mòn men răng, dẫn đến ê buốt và tăng nguy cơ sâu răng.</p>
+
+    <p>Kích ứng dạ dày: Ở những người có tiền sử viêm loét dạ dày hoặc trào ngược axit (GERD), lượng axit từ chanh có
+      thể làm trầm trọng thêm tình trạng này, gây ợ nóng, đau rát hoặc khó chịu.</p>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://images.kienthuc.net.vn/zoom/800/uploaded/thanhnt/2025_04_08/nuoc-cot-chanh-co-thuc-su-giup-thai-doc.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> Ảnh minh hoạ/Internet</em></figcaption>
+    </figure>
+    <p>Mất cân bằng pH cơ thể: Dù có ý kiến cho rằng chanh giúp "kiềm hóa" cơ thể, thực tế cơ thể tự điều chỉnh pH máu
+      trong khoảng 7.35-7.45 thông qua phổi và thận. Uống quá nhiều nước cốt chanh không thay đổi được pH cơ thể, nhưng
+      có thể gây rối loạn tiêu hóa nếu lạm dụng.</p>
+    <p>Tương tác với thuốc: Chanh chứa các hợp chất có thể ảnh hưởng đến sự hấp thụ của một số loại thuốc (như thuốc
+      huyết áp hoặc thuốc loãng xương) nếu dùng cùng lúc.</p>
+    <p>Lương y Bùi Đắc Sáng, Hội Đông y Hà Nội, cho biết quả chanh rất giàu vitamin C, vị chua, tính mát, tác dụng thanh
+      nhiệt, chữa ho, lợi tiêu hóa. Vỏ quả vị đắng, the, mùi thơm, tính lạnh, tác dụng thông khí, tiêu đờm, trị ho có
+      đờm. Nhiều người còn ngâm trực tiếp chanh với mật ong rồi mỗi ngày lấy ra pha nước uống dần.</p>
+    <p>Uống nước chanh giúp tăng cường đề kháng, hỗ trợ tiêu hóa nhưng không có tác dụng đốt mỡ, thanh lọc, thải độc.
+    </p>
+    <p>Tuy nhiên, người bị viêm loét dạ dày, các bệnh về thận, túi mật không nên dùng chanh đào và các chế phẩm từ
+      chanh. Vị chua của chanh đào sẽ làm tăng tiết axit trong dạ dày. Người có chứng ợ nóng không nên uống nhiều nước
+      chanh vì có thể gây kích thích, lâu dần gây bệnh đường tiêu hóa.</p>
+    <p>Một số chuyên gia bác bỏ giả thuyết uống nước chanh thải độc làm sạch cơ thể. Họ nói rằng chất độc được lọc và
+      đưa đến hệ tiêu hóa rồi đẩy ra ngoài. Để làm được việc đó thì bạn cần cung cấp nhiều chất xơ hơn cho cơ thể. Vì
+      thế, nước chanh không phải nguyên nhân chính để thúc đẩy quá trình thải độc cơ thể.</p>
+    <p>Thải độc bằng nước chanh là một phương pháp chưa được kiểm chứng. Chúng ta có thể đang lãng phí thời gian cho một
+      phương pháp mà không biết có hiệu quả hay không.</p>
+    <p>Theo các bác sĩ, nên bổ sung cùng lúc cả nước và chất xơ vào cơ thể. Đây là một cách để làm sạch đường tiêu hóa
+      hiệu quả. Có thể uống nhiều nước hay dùng sinh tố hoa quả hoặc nước ép trái cây. Cách này sẽ bổ sung đồng thời cho
+      bạn chất xơ và chất lỏng mà cơ thể cần. Phương pháp này cũng được khuyến khích nhiều hơn nước chanh.</p>
+  </div>
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

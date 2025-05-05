@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>khoa học </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Loài vật quý hiếm bậc nhất, tuyệt tích hàng trăm năm bất ngờ trở lại: Có loài ‘hồi sinh’ kỳ diệu ở Việt Nam,
+      chấn động cả thế giới</h1>
+    <p><strong>Tác giả:</strong> K.N (th) </p>
+    <p><strong>Ngày đăng:</strong>Chủ nhật, 10:38 13/04/2025 </p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+    <p>Mèo túi hổ: Loài vật quý hiếm tưởng tuyệt chủng hơn 100 năm</p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://giadinh.mediacdn.vn/296230595582509056/2025/4/4/348ef27962898955c755b549c11525cc-1743494819547-17434948201881334727038-1743745824586-1743745825543204336940.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Cá thể mèo túi hổ người nông dân Pao Ling Tsai tìm thấy ở Nam Úc.</em></figcaption>
+    </figure>
+
+    <p>Năm 2023, một nông dân ở Úc tên Pao Ling Tsai đã vô tình phát hiện một loài vật quý hiếm trong lúc đặt bẫy "thủ
+      phạm" giết đàn gà nhà mình. Loài Tsai tìm thấy chính là mèo túi hổ, loài động vật có vú trong chi Mèo túi. Mèo túi
+      hổ được nhìn thấy lần cuối ở Nam Úc cách đây hơn 100 năm, nhiều chuyên gia đánh giá loài vật đã tuyệt chủng ở khu
+      vực này.</p>
+
+    <p>"Tôi tưởng mình đã bắt được một con mèo, nhưng khi thấy nó, tôi còn không biết đó thực sự là con gì. Thật tuyệt
+      vời khi một thứ chúng ta nghĩ đã tuyệt chủng lại xuất hiện ngay trước cửa nhà mình", người nông dân này cho biết.
+    </p>
+
+
+
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://giadinh.mediacdn.vn/296230595582509056/2025/4/4/32329531465819-1696629050785-16966290509601784432872-1696643072420-16966430726341109785039-1743494823187-17434948232591369962359-1743745838618-17437458387581176139960.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Hình ảnh mèo túi hổ trong môi trường tự nhiên.</em></figcaption>
+    </figure>
+
+    <p>Theo kiểm lâm Ross Anderson, Cơ quan Công viên và Động vật hoang dã của Úc đã vô cùng ngạc nhiên trước sự xuất
+      hiện trở lại của loài vật này ở Nam Úc. Cơ quan này đã tiến hành xét nghiệm lấy mẫu DNA, lắp đặt một số camera
+      quan sát ban đêm để tìm thêm các cá thể mèo túi hổ tại khu vực này và thả con mèo túi hổ này trở lại tự nhiên.</p>
+
+    <p>"Có tin truyền miệng về việc loài vật này xuất hiện vào những năm 1970–1980 nhưng những ghi chép chính thức cuối
+      cùng là từ những năm 1880. Chúng được coi là tuyệt chủng ở Nam Úc do mất môi trường sống, trở thành con mồi cho
+      các loài vật khác. Chúng tôi không chắc chắn con mèo túi hổ được tìm thấy đến từ đâu, được nuôi nhốt hay sống đơn
+      độc trong tự nhiên", Ross Anderson nói.</p>
+
+    <p>Mèo túi hổ ở Australia là loài thú có túi ăn thịt lớn nhất ở lục địa Úc và là một trong những loài động vật có
+      túi ăn thịt lớn nhất thế giới. Loài vật này có chiều dài cơ thể lên tới 75 cm và đuôi dài 50 cm, trọng lượng tối
+      đa 7 kg. Chúng có bộ lông màu nâu sẫm hoặc đen với những đốm trắng đặc trưng, giúp ngụy trang trong môi trường
+      rừng rậm. Khác với nhiều loài thú có túi khác, con cái chỉ có một cái túi nhỏ phát triển trong mùa sinh sản.</p>
+
+    <p>Khác với vẻ bề ngoài "vô hại", mèo túi hổ có bản tính hung dữ và thường săn mồi vào ban đêm. Chúng leo trèo cực
+      kỳ giỏi và có thể tấn công con mồi lớn hơn nhờ hàm răng sắc nhọn, đó là lý do mèo túi hổ được mệnh danh là "sát
+      thủ", "quái vật". Thức ăn của chúng bao gồm động vật gặm nhấm, chim nhỏ, côn trùng, thậm chí cả loài bò sát và
+      động vật có túi nhỏ.</p>
+
+    <p>Vì phần lớn con mồi đều sống trên cây nên loài vật này cũng có khả năng leo cây. Chúng thường phải cạnh tranh với
+      các loài ăn thịt khác tại lục địa Úc như cáo, mèo, chó hoang… và trở thành con mồi của đại bàng đuôi nhọn, trăn
+      lớn. Mèo túi hổ sống trong nhiều môi trường, nhưng có vẻ thích rừng ẩm ướt như rừng nhiệt đới và rừng bạch đàn.
+      Sau khi săn mồi vào ban đêm, mèo túi hổ nghỉ ngơi vào ban ngày trong các hang ngầm, khe đá, hốc cây, hố rỗng…</p>
+
+    <p>Loài vật quý hiếm này có tuổi thọ khá ngắn, chỉ khoảng 3–5 năm khi sống trong môi trường tự nhiên. Mèo túi hổ
+      được xếp vào nhóm "nguy cấp" trong Sách Đỏ IUCN của Liên minh Bảo tồn Thiên nhiên Quốc tế do có rất ít cá thể được
+      tìm thấy.</p>
+
+    <p><strong>Thỏ đuôi bông:</strong> Loài vật quý hiếm tưởng tuyệt chủng hơn 100 năm tái xuất.</p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://giadinh.mediacdn.vn/296230595582509056/2025/4/4/omiltemi-cottontail-rabbit-l-1743732178072-17437321785931610570086-1743745909537-1743745909922782128747.png"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Hình ảnh mới nhất được ghi lại của thỏ đuôi bông Omilteme sau hơn 1 thế kỷ. (Ảnh: Joe Figel,
+          Re:wild)</em></figcaption>
+    </figure>
+
+    <p>Một loài thỏ cực kỳ quý hiếm, từng được coi là đã mất tích từ đầu những năm 1900, vừa được phát hiện trở lại vào
+      đầu năm 2025. Tưởng chừng như sẽ không còn có thể nhìn thấy chúng trong tự nhiên, nhưng một cuộc thám hiểm ở dãy
+      núi Sierra Madre del Sur (Mexico) sau hơn 120 năm đã thay đổi tất cả. Không chỉ chụp được hình ảnh của loài thỏ
+      quý hiếm này, nhóm nghiên cứu còn phát hiện chúng ở 7/10 khu vực được khảo sát.</p>
+
+    <p>Trong chuyến thám hiểm gần đây, nhóm nghiên cứu đã đặt bẫy camera trong các khu rừng núi cao của Guerrero,
+      Mexico. Hình ảnh thu được xác nhận sự tồn tại của thỏ đuôi bông Omiltemi – loài động vật nhỏ màu nâu từng bị coi
+      là đã tuyệt chủng do không có ghi nhận nào trong hơn một thế kỷ. Không chỉ vậy, các nhà nghiên cứu còn quan sát
+      thấy chúng xuất hiện ở phần lớn các khu vực khảo sát, cho thấy quần thể của loài này có thể lớn hơn dự đoán ban
+      đầu.</p>
+
+    <p>Thỏ đuôi bông Omilteme (<em>Sylvilagus insonus</em>), được xác định lần đầu tiên vào năm 1904 bởi Edward William
+      Nelson ở Omilteme, Guerrero, Mexico, dưới tên khoa học <em>Lepus insonus</em>. Thỏ đuôi bông Omilteme ngay sau đó
+      được phân loại lại thành một thành viên của chi <em>Sylvilagus</em>. Đây là một trong những loài thỏ kỳ lạ nhất
+      trên thế giới, có bộ lông dày và sẫm màu, kích thước rất nhỏ. Ngoài ra, chúng khác với những loài thỏ đuôi bông
+      khác vì có đuôi đen nhỏ thay vì đuôi màu trắng.</p>
+
+    <p>Việc phát hiện lại loài thỏ này là một thành công lớn đối với Re:wild, một tổ chức bảo tồn chuyên tìm kiếm các
+      loài bị biến mất. Đây là loài thứ 13 mà Re:wild đã tái phát hiện. Thỏ đuôi bông Omilteme được coi là một trong
+      những loài động vật có vú có nguy cơ tuyệt chủng cao nhất trên thế giới và chỉ được biết đến từ một vài mẫu vật.
+      Chúng từng được Liên minh Bảo tồn Thiên nhiên Quốc tế (IUCN) và các nhà chức trách Mexico liệt kê là loài "cực kỳ
+      nguy cấp", hiện nay chúng được coi là loài "thiếu dữ liệu".</p>
+
+    <p>Alberto Almazán-Catalán, người dẫn đầu đoàn nghiên cứu cho biết: "Mặc dù có vẻ ngoài nhỏ bé, nhưng chúng rất
+      khỏe, nhanh nhẹn và có tính chiếm hữu lãnh thổ. Chúng tôi quan sát thấy loài thỏ này leo lên cao với độ nghiêng
+      80%, chiều cao lên tới 5 - 6 mét. Chúng còn bảo vệ lãnh thổ nhỏ của mình khỏi những con thỏ cùng loài một cách khá
+      hung dữ và gay gắt".</p>
+
+    <p>Theo các nhà khoa học, có một số lý do khiến loài thỏ này biến mất khỏi tầng sinh quyển Mexico, chủ yếu là do nạn
+      săn bắt quá mức và môi trường sống của chúng bị phá hủy, vì nhiều khu rừng của chúng đã bị phá bỏ để nhường chỗ
+      cho các tòa nhà. Điều ấn tượng nhất là chúng đã có thể sống sót ở những vùng xa xôi mà không bị phát hiện trong
+      hơn 100 năm. Đây chính là lý do giúp chúng tiếp tục sinh sản và tồn tại đến ngày nay.</p>
+
+    <p>Các nhà khoa học hy vọng phát hiện này sẽ tạo động lực cho các nỗ lực bảo vệ môi trường sống của thỏ đuôi bông
+      Omiltemi, cũng như thúc đẩy nghiên cứu thêm về sự đa dạng sinh học trong khu vực. Sự tồn tại của loài này nhấn
+      mạnh rằng vẫn còn nhiều điều chưa biết về thiên nhiên và tầm quan trọng của việc tiếp tục bảo tồn các hệ sinh thái
+      tự nhiên
+    <h1>Sao La: Loài động vật quý hiếm được tìm thấy ở Việt Nam</h1>
+    <figure style="text-align: center;">
+      <img
+        src="https://giadinh.mediacdn.vn/296230595582509056/2025/4/4/anh1-8cd57-1743746123421-17437461237591028121188.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Hình ảnh một cá thể sao la đang di chuyển dọc con suối một thung lũng tại khu vực hẻo lánh của dãy
+          núi Trung Trường Sơn của Việt Nam được bẫy ảnh đã chụp lại trong tối ngày 7/9/2013.</em></figcaption>
+    </figure>
+
+    <p><strong>Sao la</strong> là loài thú quý hiếm, được xem như báu vật vô giá của Đông Nam Á, thậm chí được mệnh danh
+      là <em>"kỳ lân của châu Á"</em>. Dù được phát hiện vào năm 1992, nhưng sau đó, chúng gần như "bặt vô âm tín", trở
+      thành biểu tượng của sự bí ẩn trong thế giới động vật hoang dã. Sao la hiếm gặp đến mức, ngay cả các nhà khoa học
+      cũng không có cơ hội tiếp cận trực tiếp để nghiên cứu chúng. Phải mất tới 4 năm sau phát hiện đầu tiên, tức năm
+      1996, mới có bức ảnh đầu tiên về loài vật này được ghi lại.</p>
+
+    <p>Vào thời điểm cả thế giới gần như tin rằng sao la đã tuyệt chủng, tin tức về việc loài này bất ngờ tái xuất tại
+      khu rừng Trường Sơn năm 2013 đã gây chấn động. Đó là lần đầu tiên sau gần hai thập kỷ, một cá thể sao la lại được
+      ghi nhận trong tự nhiên. Sự kiện này mang đến niềm hy vọng to lớn cho cộng đồng bảo tồn thiên nhiên ở Việt Nam và
+      toàn cầu.</p>
+
+    <p>Con sao la đầu tiên còn sống được ghi nhận là vào năm 1996 tại Lào. Một vài cá thể khác được phát hiện trong
+      những năm tiếp theo. Tuy nhiên, nỗ lực nuôi nhốt loài thú này đều thất bại vì sao la không thể thích nghi với điều
+      kiện sống nhân tạo – tất cả các cá thể đều không qua khỏi. Điều này càng khẳng định sao la chỉ có thể tồn tại
+      trong môi trường rừng tự nhiên nguyên sơ, nơi vốn là môi trường sống bản địa của chúng.</p>
+
+    <p>Sao la lần đầu được phát hiện bởi nhóm nghiên cứu liên ngành giữa Bộ Lâm nghiệp Việt Nam (nay là Bộ Nông nghiệp
+      và Phát triển Nông thôn) và Quỹ Quốc tế Bảo vệ Thiên nhiên (WWF) trong một chuyến khảo sát đa dạng sinh học tại
+      Vườn Quốc gia Vũ Quang, tỉnh Hà Tĩnh. Họ tình cờ tìm thấy một hộp sọ với cặp sừng dài, thẳng và kỳ lạ trong nhà
+      một thợ săn địa phương. Phát hiện này ngay lập tức gây tiếng vang lớn, được xem là một trong những khám phá động
+      vật có vú lớn đầu tiên trên thế giới sau hơn 50 năm – một thành tựu tuyệt vời trong ngành khoa học tự nhiên thế kỷ
+      20.</p>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://giadinh.mediacdn.vn/296230595582509056/2025/4/4/anh3-8cd57-1743746153696-1743746154073767644437.jpg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Sao la còn được gọi là kỳ lân châu Á bởi nó hiếm khi được nhìn thấy và được nhận diện sau khi được
+          phát hiện vào năm 1992</em></figcaption>
+    </figure>
+
+    <p>Sau hơn 20 năm kể từ ngày được phát hiện, hiểu biết của con người về sinh thái và tập tính của <strong>sao
+        la</strong> vẫn còn vô cùng hạn chế. Sự bí ẩn này khiến các nhà khoa học không thể đưa ra ước tính chính xác về
+      số lượng cá thể trong tự nhiên. Ước tính hiện nay chỉ mang tính suy đoán – có thể còn khoảng 200 cá thể, hoặc thậm
+      chí chỉ còn vài chục cá thể lặng lẽ tồn tại trong những cánh rừng rậm dọc biên giới Việt Nam – Lào.</p>
+
+    <p>Sao la còn được gọi là <em>"kỳ lân châu Á"</em> không chỉ vì vẻ ngoài đặc biệt với cặp sừng thẳng dài và vóc dáng
+      thanh thoát, mà còn vì sự hiếm hoi gần như thần thoại của nó trong tự nhiên. Từ sau phát hiện năm 1992, chỉ một số
+      ít lần con người có thể tiếp cận hoặc ghi nhận lại sự hiện diện của loài thú này.</p>
+
+    <p>Lần cuối cùng sao la được ghi nhận là vào năm 2010 tại tỉnh Bolikhamsay, miền Trung Lào, khi người dân địa phương
+      bắt được một cá thể. Đáng tiếc, cá thể này không sống sót lâu. Trước đó, năm 1999, một bức ảnh bẫy chụp được sao
+      la trong rừng cũng tại khu vực này. Còn ở Việt Nam, lần cuối cùng một cá thể sao la được nhìn thấy trong tự nhiên
+      là từ năm 1998.</p>
+
+    <p>Thuộc nhóm thú sừng rỗng, sao la trông giống linh dương, có hai chiếc sừng dài song song, nhọn dần về phía đầu và
+      có thể đạt chiều dài tới 50 cm. Vẻ ngoài thanh thoát, màu lông nâu sẫm, có vệt trắng trên mặt khiến sao la càng
+      thêm huyền bí trong mắt giới khoa học và người yêu thiên nhiên.</p>
+
+    <p>Sao la được xem là biểu tượng sinh học sống động của dãy Trường Sơn – khu vực biên giới Việt – Lào với hệ sinh
+      thái đa dạng bậc nhất Đông Nam Á. Cùng với sao la, hai loài thú quý khác cũng được phát hiện tại đây là
+      <strong>mang lớn</strong> (năm 1994) và <strong>mang Trường Sơn</strong> (năm 1997). Những phát hiện liên tiếp này
+      đã biến Trường Sơn thành một trong những "điểm nóng" đa dạng sinh học toàn cầu.</p>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

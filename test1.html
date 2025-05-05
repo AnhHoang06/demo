@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>3 Bài viết mới nhất</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+    #article-slider {
+      width: 900px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .slide {
+      display: none;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .slide.active {
+      display: flex;
+    }
+    .slide img {
+      width: 50%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .content {
+      width: 50%;
+    }
+    .content h3 {
+      margin: 0 0 10px 0;
+    }
+    .content p {
+      font-size: 14px;
+      color: gray;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover h3 {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Bài viết mới nhất</h2>
+
+<div id="article-slider"></div>
+
+<script>
+const allArticles = [
+  {
+    title: "Tăng trưởng GDP quý 1/2025 khả quan nhưng vẫn còn nhiều thách thức",
+    link: "trongnuoc1.html",
+    category: "Trong nước",
+    image: "https://media.vneconomy.vn/w800/images/upload/2025/04/06/ba-nguyen-thi-huong.jpg",
+    time: "06/04/2025 16:00"
+  },
+  {
+    title: "Có nên sử dụng chế độ nguồn điện thấp trên iPhone?",
+    link: "congnghe1.html",
+    category: "Công nghệ",
+    image: "https://media.vov.vn/sites/default/files/styles/large_watermark/public/2025-04/1_56.jpg",
+    time: "28/04/2025 14:30"
+  },
+  {
+    title: "Giá xăng giảm nhẹ trong tháng 4",
+    link: "#",
+    category: "Kinh tế",
+    image: "images/kinhte1.jpg",
+    time: "25/04/2025 10:00"
+  },
+  {
+    title: "Sao Hollywood ghé thăm Hà Nội",
+    link: "#",
+    category: "Giải trí",
+    image: "images/giaitri1.jpg",
+    time: "24/04/2025 15:00"
+  },
+  {
+    title: "Thời tiết nắng nóng kéo dài",
+    link: "#",
+    category: "Thời sự",
+    image: "images/thoisu1.jpg",
+    time: "23/04/2025 09:00"
+  },
+  {
+    title: "Học sinh Việt Nam đạt giải quốc tế",
+    link: "#",
+    category: "Giáo dục",
+    image: "images/giaoduc1.jpg",
+    time: "22/04/2025 08:00"
+  }
+];
+
+// Chuyển "dd/mm/yyyy hh:mm" thành Date để sắp xếp
+function parseTime(str) {
+  const [datePart, timePart] = str.trim().split(' ');
+  const [day, month, year] = datePart.split('/');
+  const [hour, minute] = timePart.split(':');
+  return new Date(`${year}-${month}-${day}T${hour}:${minute}`);
+}
+
+// Sắp xếp bài mới nhất
+const sortedArticles = allArticles.sort((a, b) => parseTime(b.time) - parseTime(a.time));
+
+// Lấy 3 bài mới nhất
+const latestArticles = sortedArticles.slice(0, 3);
+
+// Hiển thị
+const slider = document.getElementById('article-slider');
+
+latestArticles.forEach((article, index) => {
+  const slide = document.createElement('div');
+  slide.className = 'slide' + (index === 0 ? ' active' : '');
+  slide.innerHTML = `
+    <img src="${article.image}" alt="${article.title}">
+    <div class="content">
+      <a href="${article.link}">
+        <h3>${article.title}</h3>
+      </a>
+      <p>${article.category} - ${article.time}</p>
+    </div>
+  `;
+  slider.appendChild(slide);
+});
+
+// Tự động chuyển slide mỗi 5 giây
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+setInterval(() => {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}, 5000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>khoa học </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Đưa kỹ năng AI vào đề thi tin học văn phòng MOSWC 2025</h1>
+    <p><strong>Tác giả:</strong> Trọng Đạt </p>
+    <p><strong>Ngày đăng:</strong>Thứ hai, 21/4/2025, 11:47 (GMT+7)</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+    <p>Đề thi vô địch tin học văn phòng thế giới MOSWC 2025 tại Việt Nam có thêm phần đánh giá kỹ năng ứng dụng AI khi
+      xử lý Word, Excel, Powerpoint.</p>
+
+    <p>Gần 2.000 thí sinh từ 230 đội tuyển của các trường phổ thông, trung cấp, cao đẳng, đại học trên toàn quốc đã
+      tranh tài tại Vòng loại quốc gia Cuộc thi Vô địch tin học văn phòng thế giới Microsoft Office Specialist World
+      Championship (MOSWC) sáng 20/4. Các vòng thi sẽ tìm ra 6 gương mặt đại diện Việt Nam tranh tài tại Vòng chung kết
+      thế giới vào cuối tháng 7 ở Orlando, Florida (Mỹ).</p>
+
+    <p>Được tổ chức thường niên trên thế giới từ 2002, MOSWC dành cho học sinh, sinh viên độ tuổi từ 13 đến 22, với mục
+      đích tìm kiếm những tài năng về kỹ năng sử dụng các ứng dụng tin học văn phòng.</p>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://i1-sohoa.vnecdn.net/2025/04/21/vo-dich-tin-hoc-2-3268-1745207956.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=nRtwHuth7s75OiF0BENZTg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Thí sinh tại Vòng loại quốc gia Cuộc thi vô địch tin học văn phòng thế giới ngày 20/4. Ảnh: Văn
+          Thìn</em></figcaption>
+    </figure>
+
+    <p>Theo Trung ương Đoàn TNCS Hồ Chí Minh, đơn vị tổ chức tại Việt Nam, điểm mới của MOSWC 2025 là bổ sung câu hỏi về
+      trí tuệ nhân tạo trong bài thi. Qua đó, ban tổ chức đánh giá hiểu biết của thí sinh về xu hướng công nghệ mới,
+      cũng như kỹ năng ứng dụng AI khi xử lý Word, Excel, Powerpoint.</p>
+
+    <p>"Sự đổi mới này nhằm bắt kịp xu thế chuyển đổi số toàn cầu, đồng thời giúp thí sinh thể hiện năng lực ứng dụng
+      công nghệ vào giải quyết yêu cầu thực tế", đại diện Trung ương Đoàn nói.</p>
+
+    <p>Cuộc thi MOSWC sử dụng bài thi MOS (Microsoft Office Specialist) do tập đoàn Certiport (Mỹ) cung cấp theo các cấp
+      độ để đánh giá trình độ thí sinh. Mỗi thí sinh thi đấu ở một trong sáu nội dung gồm: MOS Word 2019, MOS Excel
+      2019, MOS PowerPoint 2019; MOS Word 365 Apps, MOS Excel 365 Apps và MOS PowerPoint 365 Apps.</p>
+
+    <p>Tại Vòng chung kết quốc gia MOSWC diễn ra ngày 18/5, ban tổ chức sẽ trao 6 giải Nhất, 18 giải Nhì, 30 giải Ba, 72
+      giải Khuyến khích và một giải Triển vọng dành cho tập thể và cá nhân đạt thành tích.</p>
+
+    <p>Đây là năm thứ 16 MOSWC được triển khai ở Việt Nam. Trong 15 lần trước, Việt Nam giành 4 Huy chương Vàng, 4 Huy
+      chương Bạc, 13 Huy chương Đồng và nhiều vị trí thuộc top 10.</p>
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

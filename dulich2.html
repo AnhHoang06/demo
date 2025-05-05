@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>du lịch </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Ngôi làng giữa biển hoa ban trắng ở Điện Biên, đẹp như bước ra từ cổ tích</h1>
+    <p><strong>Tác giả:</strong> Linh Trang</p>
+    <p><strong>Ngày đăng:</strong>Thứ Hai, 24/03/2025 - 06:00</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+
+    <p> Tháng 3, bản Nặm Cứm, Điện Biên "đẹp như cổ tích" khi hàng ngàn gốc ban cổ thụ nở rộ, sắc hoa trắng tinh khôi
+      phủ khắp núi đồi, thu hút du khách về chiêm ngưỡng.</p>
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-3-103738.jpg?width=0&s=aSquaLdG3pu8oY6-3cFK5Q"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> Khoảng 2 tuần qua, bản Nặm Cứm, xã Ngối Cáy, huyện Mường Ảng gây sốt trên mạng xã hội với
+          khung cảnh được ví von đẹp như cổ tích. Những nếp nhà đơn sơ của đồng bào dân tộc Mông ẩn hiện giữa rừng
+          hoa ban cổ thụ nở rộ, trắng muốt dưới ánh nắng. Ảnh: Thiện Nguyễn</em></figcaption>
+    </figure>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-103739.jpg?width=0&s=w7tSS4xCGbazzesk_K8EQg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> Ở đây có khoảng 1.200 gốc hoa ban cổ thụ. Các hộ dân sinh sống trên sườn núi khá dốc, từng nhà
+          phân tầng bám vào trục đường bê tông uốn lượn giữa bản như hình xương cá. Ảnh: Thiện Nguyễn</em>
+      </figcaption>
+    </figure>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-6-103740.jpg?width=0&s=9uerL2vmdPMPLqWj4HcQhQ"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> Hoa ban chủ yếu mọc tự nhiên, có tuổi đời hàng chục đến trăm năm, gốc ngả màu, xù xì, đường kính
+          từ 50-60cm. Ảnh: Thiện Nguyễn</em></figcaption>
+    </figure>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-2-103742.jpg?width=0&s=8LiM2tSpLGKAOsSMSwHhAw"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> Anh Thiện Nguyễn, một người đam mê nhiếp ảnh, đang sống ở Điện Biên đã tới Nặm Cứm nhiều
+          lần trong hơn 1 tháng qua, kể từ khi mùa hoa ban khoe sắc. "Những gốc ban ở đây xù xì, nhuốm màu thời
+          gian, hoa bung nở trắng muốt, tinh khôi, thể hiện sức sống mãnh liệt. Mỗi cây ban có hình dáng, đặc
+          điểm khác nhau. Vẻ đẹp hoàn toàn tự nhiên ấy khiến mỗi lần tới đây, tôi đều ngỡ ngàng, có cảm xúc mới
+          để sáng tác", anh Thiện nói. Ảnh: Thiện Nguyễn</em></figcaption>
+    </figure>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/485143940-9300002066753114-7572982684050200452-n-103743.jpg?width=0&s=Brp0Ar5I5vzuxGZAOXCzsw"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Theo anh Thiện, hiện một số hộ gia đình tại bản cũng phục vụ ăn uống cho du khách nhưng còn
+          đơn sơ, vụng về. "Bà con chưa làm du lịch bao giờ nên còn thiếu kinh nghiệm. Thế nhưng bà con thân thiện,
+          mến khách và rất nhiệt tình", anh cho biết. Ảnh: Thiện Nguyễn</em></figcaption>
+    </figure>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-9-103744.jpg?width=0&s=yXvxCi8_ZNBpu3d82PW1WA"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Trong chuyến du lịch Điện Biên 4 ngày mới đây, chị Dung (Hà Nội) dành thời gian ghé thăm Nặm
+          Cứm. Khi bước vào ngôi làng, chị cảm giác như "lạc vào thế giới cổ tích": hoa ban nở trắng xóa, khoe sắc
+          giữa núi rừng, đan xen với màu lúa non xanh mướt. "Bà con ở bản còn nghèo, chưa có hộ nào làm homestay nhưng
+          họ rất trân trọng, bảo vệ những cây ban cổ thụ. Điều đó làm mình ấn tượng và xúc động", chị Dung chia
+          sẻ. Ảnh: Dung Nguyễn</em></figcaption>
+    </figure>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-10-103745.jpg?width=0&s=Qbf9iIX83qQrfMCMQT-kuQ"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Chị Diệu Huệ về làm dâu ở Điện Biên vài năm, đã rất quen thuộc với những mùa hoa ban nở rộ.
+          Thế nhưng, lần đầu tiên tới Nặm Cứm, chị vẫn không khỏi bất ngờ trước khung cảnh mộc mạc, nguyên sơ nơi
+          đây. "Lần đầu tôi thấy gốc cây ban cổ thụ vài người ôm mới xuể. Màu hoa trắng xóa, thơ mộng, không từ
+          ngữ nào diễn tả được vẻ đẹp đó", chị nói. Ảnh: Diệu Huệ</em></figcaption>
+    </figure>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-9-103744.jpg?width=0&s=yXvxCi8_ZNBpu3d82PW1WA"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Du khách nên tới đây chụp ảnh từ 8-11h hoặc 14h30-17h. Mặt trời xuống núi sớm nên sau 17h trời sẽ
+          tối nhanh. Ảnh: Diệu Huệ</em></figcaption>
+    </figure>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/3/23/hoa-ban-nam-cum-5-103747.jpg?width=0&s=n_H7VtXdkIAutScZTTiC1w"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Theo lãnh đạo huyện Mường Ảng, địa phương này đã chủ trương xây dựng nơi đây thành bản du lịch
+          cộng đồng để quảng bá vẻ đẹp độc đáo, hiếm có, đồng thời giúp người dân nơi đây từng bước chuyển đổi phương
+          thức làm ăn, nâng cao đời sống. Ảnh: Thiện Nguyễn</em></figcaption>
+    </figure>
+  </div>
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

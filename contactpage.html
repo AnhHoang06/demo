@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Liên hệ</title>
+</head>
+
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghê</button></a></th>
+  </table>
+
+  <div class="divider-bar"></div>
+
+  <div class="container">
+
+
+    <form class="form-contact">
+      <div id="lienhe">
+        <h1>Liên hệ với chúng tôi</h1>
+      </div>
+      <div class="form-group">
+        <label for="name">Tên của bạn</label>
+        <input type="text" id="name" placeholder="Họ Tên" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email của bạn</label>
+        <input type="email" id="email" placeholder="ban@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Chủ đề</label>
+        <input type="text" id="subject" placeholder="Chủ đề" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Nội dung</label>
+        <textarea id="message" rows="5" placeholder="Nhập..." required></textarea>
+      </div>
+      <button id="send" type="submit">Gửi</button>
+    </form>
+
+    <!-- <div class="socials">
+          <a href="https://facebook.com" target="_blank">🌐</a>
+          <a href="https://linkedin.com" target="_blank">💼</a>
+          <a href="https://github.com" target="_blank">🐙</a>
+        </div> -->
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+
+</html>

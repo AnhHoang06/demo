@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>thể thao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Đỉnh cao của Aston Villa</h1>
+    <p><strong>Tác giả:</strong> Tường Linh</p>
+    <p><strong>Ngày đăng:</strong> 7/4/2025</p>
+  </div>
+
+
+  <div class="baibao">
+
+    <figure style="text-align: center;">
+      <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_04_07_119_51915540/bd72b455dc1b35456c0a.jpg.avif"
+        alt="Ảnh mô tả">
+      <figcaption><em>Aston Villa đang chơi cực kỳ ấn tượng.</em></figcaption>
+    </figure>
+    <p>Nhiều chuyên gia và người hâm mộ Aston Villa đang bắt đầu tranh luận với nhau, rằng liệu đây có phải là tập thể
+      hay nhất của Unai Emery, kể từ khi chiến lược gia người Tây Ban Nha đến Villa Park làm việc hay không. Mùa trước,
+      Villa lột xác dưới thời Emery, gây bất ngờ tại Premier League và trở lại sân chơi Champions League, nhưng giai
+      đoạn nước rút của mùa giải 2024/25 dường như mới là đỉnh cao của CLB này.</p>
+
+    <p>Thống kê ấn tượng Từ vị trí kẻ ngoài cuộc trong cuộc đua giành vé tham dự Champions League nửa đầu mùa giải,
+      Villa giờ đây vững vàng và nắm lợi thế. Họ thậm chí vẫn còn nguyên cơ hội ở hai sân chơi cúp khác, khi vào tới bán
+      kết FA Cup và tứ kết Champions League. Chưa bao giờ người hâm mộ Aston Villa cảm nhận thấy đội bóng của mình tiệm
+      cận với các ông lớn đến như vậy, kể từ khi Ngoại hạng Anh ra đời ba thập niên trước.</p>
+
+    <p>Emery trở thành huấn luyện viên đầu tiên của Villa có 15 trận đấu bất bại trên sân nhà tại Ngoại hạng Anh sau 44
+      năm. Người gần nhất làm được điều này cho Villa là HLV Ron Saunders ở mùa giải 1980/81. Đây cũng là lần đầu tiên
+      sau 6 năm, Villa thắng 7 trận liên tiếp tại Ngoại hạng Anh.</p>
+
+    <p>Quan trọng hơn, đội bóng của HLV Emery còn biết cách giải quyết các đối thủ trong những trận cầu lớn. Hai chiến
+      thắng trước Brighton (tại FA Cup) và Forest (tại Ngoại hạng Anh) cho thấy sự vươn mình của CLB này. Họ dường như
+      không còn là kẻ thách thức, mà đang trở thành đội bóng lớn thật sự.</p>
+
+    <p>Aston Villa vẫn xếp thứ 6 tại Ngoại hạng Anh, nhưng họ hiện chỉ kém Man City và Chelsea lần lượt 2 và 1 điểm.
+      Khoảng cách của Villa với Forest cũng chỉ là 6 điểm. Trong 7 vòng đấu còn lại của Premier League 2024/25, viễn
+      cảnh dự Champions League mùa tới với Villa vẫn hiển hiện. Thậm chí, phong độ của Villa lúc này còn khiến các đối
+      thủ cạnh tranh với họ như Chelsea, Man City hay thậm chí cả PSG phải dè chừng.</p>
+
+    <p>Điều gì đã giúp Villa đạt phong độ ấn tượng như vậy ở giai đoạn quyết định của mùa giải? Các cầu thủ ghi bàn
+      quyết định trong những chiến thắng gần đây của Villa minh chứng rằng CLB hưởng lợi lớn từ những thương vụ chuyển
+      nhượng đầy táo bạo hồi giữa mùa.</p>
+
+    <p>Đi ngược xu thế Ở vòng 31 Ngoại hạng Anh cuối tuần qua, Donyell Malen là một trong hai người ghi bàn cho Aston
+      Villa trước Forest. Tuyển thủ người Hà Lan là một trong ba tân binh của HLV Emery ở phiên chợ tháng 1/2025, bên
+      cạnh Marcus Rashford và Marco Asensio.</p>
+
+    <figure style="text-align: center;">
+      <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_04_07_119_51915540/c216ce31a67f4f21166e.jpg.avif"
+        alt="Ảnh mô tả">
+      <figcaption><em>Villa thành công nhờ làm mới đội hình với những tân binh như Asensio.</em></figcaption>
+    </figure>
+
+    <p>Trái với xu thế chi tiêu tiết kiệm và ổn định đội hình ở phiên chợ giữa mùa, Aston Villa lại sẵn sàng đánh cược
+      vào các tân binh và xáo trộn đội hình khi mùa giải đang diễn ra. Trước Malen, Rashford và Asensio liên tục tỏa
+      sáng. Bộ đôi này tái hiện phong độ đỉnh cao thời còn ở Manchester United hay Real Madrid.</p>
+
+    <p>Họ không mất nhiều thời gian để thích với màu áo mới. Trong khi nhiều CLB tại Premier League thường tỏ ra thận
+      trọng với kỳ mua sắm giữa mùa, coi đây như thời điểm khó tìm kiếm cầu thủ chất lượng với mức giá hợp lý, Villa lại
+      chọn cách tiếp cận khác biệt.</p>
+
+    <p>Họ không ngần ngại đầu tư và nhanh chóng trao cơ hội cho các tân binh, giúp đội bóng duy trì phong độ ổn định
+      trên cả ba đấu trường lớn là Ngoại hạng Anh, FA Cup và Champions League.</p>
+
+    <p>Thành công hiện tại của Villa là minh chứng cho sự kết hợp giữa tài năng huấn luyện của Emery và sự hỗ trợ mạnh
+      mẽ từ ban lãnh đạo, dẫn đầu là Giám đốc Thể thao Monchi. Bộ đôi người Tây Ban Nha, Emery và Monchi, với kinh
+      nghiệm dày dặn thời còn ở Sevilla, biết cách khai thác tối đa tiềm năng của các cầu thủ mới.</p>
+
+    <p>Trong khi đó, hai ông chủ Sawiris và Edens của Villa cũng sẵn sàng cung cấp nguồn lực tài chính để bộ đôi người
+      Tây Ban Nha hiện thực hóa tham vọng. Kết quả, Villa cho thấy họ đang trên đường trở thành thế lực đáng gờm của
+      bóng đá Anh và châu Âu.</p>
+
+    <figure style="text-align: center;">
+      <video controls preload="metadata" width="100%" style="max-width: 800px; margin: auto; display: block;"
+        webkit-playsinline playsinline>
+        <source
+          src="https://baomoi-mcloud-bf-s1.bmcdn.me/W_ac8w6KM5E/baa4ea48789497cace85/03c7f35272ef9db1c4fe/720/f4eed87df7591e074748.mp4?authen=exp=1744206227~acl=/W_ac8w6KM5E/*~hmac=975d80ec378a68522805741af6aa6f53"
+          type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+      </video>
+      <figcaption style="font-style: italic;">
+        Tottenham tiễn Southampton xuống hạng nhất. Tối 6/4 (giờ Hà Nội), Southampton thua Tottenham 1-3 và trở thành
+        đội bóng đầu tiên rớt hạng ở Ngoại hạng Anh mùa giải 2024/25.
+      </figcaption>
+    </figure>
+  </div>
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

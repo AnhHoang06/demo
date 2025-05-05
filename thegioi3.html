@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> thế giới </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Máy bay lật ngửa trong lúc hạ cánh ở Canada, nhiều người bị thương</h1>
+    <p><strong>Tác giả:</strong> Hoài Linh</p>
+    <p><strong>Ngày đăng:</strong> Thứ Ba, 18/02/2025 - 09:32</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+    <p>Một máy bay chở 80 người của hãng hàng không Delta Air Lines bị lật ngửa trong lúc hạ cánh tại sân bay quốc tế
+      Toronto Pearson. Ít nhất 18 hành khách bị thương. </p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/2/18/tai-nan-may-bay-epa-75786.jpg?width=0&s=fB0Y4lc9OougshwufKBjSQ"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Ảnh: EPA </em></figcaption>
+    </figure>
+    <p>Theo NBC News, vụ tai nạn xảy ra vào khoảng 2h15 chiều qua (17/2) song may mắn không có ai thiệt mạng.</p>
+
+    <p>Các video được đăng trên mạng xã hội và phát sóng từ sân bay cho thấy "một cảnh tượng siêu thực", chiếc máy bay
+      lật ngược hoàn toàn trong khi các nhân viên cứu hộ sơ tán hành khách tại hiện trường.</p>
+
+    <p>John Nelson, một hành khách kể: "Chúng tôi vừa hạ cánh. Máy bay của chúng tôi gặp nạn. Nó bị lật ngược".</p>
+
+    <p>Theo John, phần lớn mọi người có vẻ ổn và đang xuống máy bay.</p>
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/2/18/tai-nan-may-bay-epa-75787.jpg?width=0&s=xUvmndB85U3FptIvib4YaA"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Ảnh: EPA </em></figcaption>
+    </figure>
+    <p>Chủ tịch kiêm Giám đốc điều hành sân bay Toronto Pearson Deborah Flint cho biết, trong số những người bị thương
+      không có ai trong tình trạng nguy kịch.</p>
+
+    <p>Cảnh sát Canada hiện chưa rõ nguyên nhân gây ra tai nạn.</p>
+
+    <p>Theo Cục hàng không liên bang Mỹ, chuyến bay 4819 của Delta Air Lines, khởi hành từ Minneapolis đã gặp nạn khi hạ
+      cánh xuống sân bay ở Toronto.</p>
+
+    <p>Trên máy bay có tổng cộng 80 người, trong đó có 4 thành viên tổ bay.</p>
+
+    <p>Trong số các hành khách trên máy bay, có 22 người Canada, số còn lại là công dân của nhiều quốc gia khác.</p>
+
+    <p>Sân bay quốc tế Toronto Pearson là sân bay lớn nhất của Canada và là một trong những sân bay nhộn nhịp nhất ở Bắc
+      Mỹ.</p>
+
+    <p>Kể từ giữa tuần trước, Toronto hứng tuyết rơi dày, khiến hàng loạt chuyến bay bị hủy và gây ra chậm chuyến.</p>
+
+    <p>Người phụ trách cứu hỏa tại sân bay cho hay, vào thời điểm máy bay gặp nạn, đường băng khô ráo và gió ngang không
+      gây ảnh hưởng tới việc máy bay hạ cánh.</p>
+
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

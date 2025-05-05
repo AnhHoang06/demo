@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sức khỏe </title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>8 kỹ năng giúp tránh mua phải thuốc giả</h1>
+    <p><strong>Tác giả:</strong>Lê Nga</p>
+    <p><strong>Ngày đăng:</strong>Thứ hai, 21/4/2025, 15:19 (GMT+7)</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+
+    <p>Bộ Y tế khuyến cáo thuốc giá rẻ bất thường nhiều khả năng là giả, để tránh nhầm nên mua ở nhà thuốc được cấp
+      phép, có uy tín và địa chỉ rõ ràng.</p>
+
+    <p>Hướng dẫn này được Bộ Y tế đưa vào cẩm nang tránh mua phải thuốc giả phát hành ngày 21/4, trong bối cảnh 21 sản
+      phẩm thuốc giả bị thu giữ, trong đó có 4 loại được xác định là giả mạo thuốc đã được cấp phép lưu hành, gồm:
+      Tetracyclin, Clorocid, Pharcoter và Neo-Codion. 16 sản phẩm còn lại không trùng khớp với bất kỳ loại thuốc nào nằm
+      trong danh mục đã được Bộ Y tế cấp giấy phép đăng ký lưu hành.</p>
+
+    <p>Để hạn chế nguy cơ trở thành nạn nhân của thuốc giả, Bộ Y tế đưa ra một số khuyến cáo quan trọng.</p>
+
+    <p><strong>Mua thuốc tại nơi uy tín:</strong> Chỉ mua thuốc ở các nhà thuốc, quầy thuốc được cấp phép, có uy tín và
+      địa chỉ rõ ràng. Không mua từ nguồn không rõ ràng như chợ, hàng rong hoặc qua các trang mạng xã hội, livestream...
+    </p>
+
+    <p><strong>Kiểm tra bao bì và thông tin trên vỏ thuốc:</strong> Bao bì phải nguyên vẹn, không rách, mờ hoặc có dấu
+      hiệu bị chỉnh sửa; Kiểm tra các thông tin như: tên thuốc, số lô, ngày sản xuất, hạn sử dụng, số đăng ký, tên nhà
+      sản xuất. Các thông tin này phải rõ ràng, không tẩy xóa.</p>
+
+    <p>So sánh với bao bì chính hãng (nếu có) để phát hiện sự khác biệt về màu sắc, chữ in, hoặc logo; quan sát màu sắc,
+      kích thước, ký hiệu trên viên thuốc, hộp thuốc. Nếu có sự khác biệt so với lần sử dụng trước hoặc so với mô tả
+      chính hãng, không nên sử dụng.</p>
+
+    <p><strong>Sử dụng ứng dụng quét mã vạch/mã QR</strong> để kiểm tra thông tin sản phẩm (trường hợp có in mã vạch/mã
+      QR trên vỏ hộp, mã không quét được hoặc thông tin không khớp, hãy nghi ngờ).</p>
+
+    <p><strong>Yêu cầu hóa đơn và chứng từ:</strong> Khi mua thuốc, yêu cầu hóa đơn mua hàng để đảm bảo nguồn gốc. Hóa
+      đơn cũng là cơ sở để khiếu nại nếu phát hiện thuốc giả.</p>
+
+    <p><strong>Chú ý giá cả bất thường:</strong> Thuốc giả thường được bán với giá rẻ bất thường để thu hút người mua.
+      Nếu giá quá thấp so với thị trường, cần cẩn trọng.</p>
+
+    <p><strong>Tìm hiểu thông tin từ nguồn chính thức:</strong> Tra cứu thông tin thuốc trên website của Cục Quản lý
+      Dược (<a href="https://dav.gov.vn">dav.gov.vn</a>) hoặc các trang web uy tín của nhà sản xuất. Tham khảo ý kiến
+      bác sĩ hoặc dược sĩ trước khi mua. Đối với thuốc kê đơn chỉ mua thuốc theo đơn thuốc của bác sĩ.</p>
+
+    <p><strong>Cảnh giác với thuốc bán online:</strong> Kể từ ngày 1/7/2025, khi Luật số 44/2024 sửa đổi bổ sung một số
+      điều của Luật Dược có hiệu lực thi hành thì một số thuốc (thuốc không kê đơn) mới được kinh doanh (bán lẻ) theo
+      phương thức thương mại điện tử trên sàn giao dịch thương mại điện tử, ứng dụng thương mại điện tử bán hàng,
+      website thương mại điện tử bán hàng có chức năng đặt hàng trực tuyến.</p>
+
+    <p>Sau ngày 1/7/2025, trường hợp mua thuốc qua mạng, chỉ mua thuốc trên các trang web được cấp phép bán thuốc trực
+      tuyến được phép; không mua qua các nền tảng mạng xã hội hoặc người bán cá nhân không rõ danh tính.</p>
+
+    <p><strong>Hạn chế mua thuốc theo lời quảng cáo:</strong> Tránh tin vào các lời quảng cáo "thần dược" hoặc thuốc
+      không rõ nguồn gốc được rao bán qua mạng hoặc truyền miệng.</p>
+
+    <p><strong>Báo cáo nếu nghi ngờ:</strong> Nếu phát hiện dấu hiệu thuốc giả, báo ngay cho cơ quan chức năng như Sở Y
+      tế, Cục Quản lý Dược hoặc công an địa phương để xử lý. Nếu đã mua phải thuốc giả, ngừng sử dụng ngay và liên hệ cơ
+      sở y tế để được tư vấn. Việc sử dụng thuốc giả có thể gây nguy hiểm nghiêm trọng đến sức khỏe.</p>
+
+
+
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://i1-suckhoe.vnecdn.net/2025/04/21/Anh-chup-Man-hinh-2025-04-20-l-7309-6140-1745222308.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=namUd63IdxAtIcjRNpHYWg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Danh mục 16 thuốc chưa được cấp số đăng ký. Ảnh: Bộ Y tế</em></figcaption>
+    </figure>
+
+    <p><strong>Bước 1:</strong> Truy cập hệ thống dịch vụ công trực tuyến của Cục Quản lý Dược, mục Đăng ký thuốc, tra
+      cứu số đăng ký, tại địa chỉ: <a href="https://dichvucong.dav.gov.vn/congbothuoc/index"
+        target="_blank">https://dichvucong.dav.gov.vn/congbothuoc/index</a></p>
+
+    <p><strong>Bước 2:</strong> Tra cứu giấy đăng ký thuốc, nguyên liệu làm thuốc lưu hành tại Việt Nam, nhập thông tin
+      thuốc cần tìm (có thể tra cứu theo tên thuốc, cơ sở sản xuất, cơ sở đăng ký, số đăng ký lưu hành thuốc, ...)</p>
+
+    <p><strong>Bước 3:</strong> Đối chiếu và kiểm tra kết quả, hệ thống sẽ cung cấp: Thông tin đầy đủ về thuốc tại các
+      cột tên thuốc, số đăng ký, dạng bào chế, hoạt chất, hàm lượng, cơ sở đăng ký, sản xuất. Xem mẫu nhãn, hướng dẫn sử
+      dụng thuốc.</p>
+
+    <p>Nếu kết quả tra cứu cho kết quả hiển thị các thông tin nêu trên, thì loại thuốc tra cứu đã được cấp phép lưu
+      hành. Ngược lại, kết quả tra cứu không hiển thị thông tin đã nêu thì có thể xác định loại thuốc tra cứu không được
+      cấp đăng ký lưu hành. Đây có thể là thuốc giả.</p>
+
+    <p>Theo các bác sĩ, thuốc giả che giấu triệu chứng, làm chậm chẩn đoán, điều trị, nguy cơ gây biến chứng nguy hiểm,
+      nhất là ở bệnh tim mạch, tiểu đường, xương khớp. Như Tetracyclin là một trong những kháng sinh phổ biến dùng điều
+      trị các nhiễm trùng da, tiết niệu, hô hấp. Khi người bệnh dùng Tetracyclin giả – tức là không có hoạt chất kháng
+      sinh, hoặc chứa tạp chất – vi khuẩn sẽ không bị tiêu diệt mà tiếp tục phát triển mạnh mẽ.</p>
+
+    <p>Vi khuẩn không bị kiểm soát sẽ sinh sôi nhanh, lan vào máu, phổi hoặc các cơ quan nội tạng là lúc nhiễm khuẩn
+      huyết xảy ra, tỷ lệ tử vong cao nếu không được xử lý kịp thời.</p>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+</html>

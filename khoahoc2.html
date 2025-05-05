@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>khoa học </title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Thiên thạch tạo ra vùng dị thường trọng lực khổng lồ ở Nam Cực</h1>
+    <p><strong>Tác giả:</strong> An Khang (Theo Live Science) </p>
+    <p><strong>Ngày đăng:</strong>Thứ bảy, 12/4/2025, 12:55 (GMT+7) </p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+    <p>Miệng hố Wilkes Land rộng 510 km ở Đông Nam Cực có thể hình thành do thiên thạch cổ đại và là miệng hố va chạm
+      lớn nhất trên Trái Đất. </p>
+
+    <figure style="text-align: center;">
+      <img
+        src="https://i1-vnexpress.vnecdn.net/2025/04/12/VNE-Field-1744431099-1977-1744431199.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=8ztIj1uVQ0WeQtEBSnhYvA"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Miệng hố Wilkes Land trong bản đồ lực hấp dẫn. Ảnh: Klokočník, Kostelecký & Bezděk</em>
+      </figcaption>
+    </figure>
+
+    <p>Miệng hố Wilkes Land là một vùng trũng nằm ở lớp đá nền bên dưới thềm băng Đông Nam Cực, có đường kính 510 km.
+      Các nhà nghiên cứu tìm cách lý giải sự tồn tại của nó từ thập niên 1960, bằng chứng gần đây nhất cho thấy miệng hố
+      này ra đời từ vụ va chạm thiên thạch. Miệng hố Wilkes Land được phát hiện lần đầu tiên như một vết lõm khổng lồ ở
+      trường hấp dẫn của Trái Đất. Khảo sát trọng lực và địa chấn trên mặt đất ban đầu chỉ ra miệng hố rộng 240 km nhưng
+      kỹ thuật mới hơn hé lộ nó rộng gấp đôi kích cỡ đó, theo Live Science hôm 11/4 đưa tin.</p>
+
+    <p>Theo một nghiên cứu năm 2018, miệng hố Wilkes Land nằm ở độ sâu khoảng 1,6 km bên dưới bề mặt thềm băng Nam Cực.
+      Các chuyên gia kiểm tra miệng hố chi tiết hơn so với trước đây và xem xét mối liên hệ tiềm ẩn của nó với miền nam
+      Australia, từng gắn liền với Đông Nam Cực cho tới 35 triệu năm trước. Dù chưa biết chắc nguồn gốc miệng hố, kết
+      quả nghiên cứu xác định sự kiện tạo ra miệng hố nhiều khả năng xảy ra trước khi các lục địa tách rời.</p>
+
+    <p>Giới nghiên cứu đề xuất vài giả thuyết về miệng hố Wilkes Land, bao gồm đây có thể là cấu trúc núi lửa, bồn địa
+      trầm tích, thung lũng bị xói mòn sâu hoặc miệng hố va chạm thiên thạch. Các nhà khoa học sử dụng kỹ thuật viễn
+      thám vệ tinh để lập bản đồ miệng hố và xác định những đặc điểm của nó. Ở chính giữa lỗ hổng trong trường hấp dẫn
+      của Trái Đất, họ tìm thấy vùng dị thường trọng lực dương (lực hấp dẫn ở đó lớn hơn bình thường), với thềm băng lấp
+      đầy khoảng trống xung quanh đỉnh ở trung tâm giống như một chiếc bánh vòng lớn.</p>
+
+    <p>Đỉnh ở trung tâm có thể là cấu trúc mang tên khu vực tập trung khối lượng (mascon). Mascon có thể xảy ra bên
+      trong cấu trúc va chạm thiên thạch do thiên thạch đâm xuyên qua vỏ Trái Đất và ảnh hưởng tới lớp phủ bên dưới. Sau
+      vụ va chạm, lớp phủ có thể đùn lên, tạo ra dị thường trọng lực dương. Miệng hố Wilkes Land và mascon của nó không
+      phải hình tròn hoàn hảo mà có dạng chữ U, chứng minh giả thuyết miệng hố tạo bởi vụ va chạm thiên thạch. Phần phía
+      bắc miệng hố bị đứt đoạn, có thể là kết quả từ những quá trình kiến tạo tách rời Australia và Nam Cực.</p>
+
+    <p>Nếu Wilkes Land là miệng hố va chạm, đây sẽ là miệng hố va chạm lớn nhất từng biết trên Trái Đất xét về mặt kích
+      thước. Đường kính của miệng hố phù hợp với tốc độ và kích thước của những thiên thạch thường xuyên đâm vào Trái
+      Đất ở thời sơ khai cách đây 3,8 - 4,1 tỷ năm.</p>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

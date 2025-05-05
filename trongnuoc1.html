@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>trong nước </title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Tăng trưởng GDP quý 1/2025 khả quan nhưng vẫn còn nhiều thách thức</h1>
+    <p><strong>Tác giả:</strong> Anh Nhi</p>
+    <p><strong>Ngày đăng:</strong>16:00 06/04/2025</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+    <p> GDP quý 1/2025 của Việt Nam đạt mức tăng trưởng 6,93%, một con số đáng ghi nhận trong bối cảnh kinh tế thế giới
+      nhiều biến động. Tuy nhiên, trao đổi với phóng viên Tạp chí Kinh tế Việt Nam/VnEconomy, bà Nguyễn Thị Hương, Cục
+      trưởng Cục Thống kê (Bộ Tài chính) cho rằng mức tăng trưởng này vẫn thấp hơn so với kỳ vọng đặt ra đầu năm…</p>
+
+
+    <figure style="text-align: center;">
+      <img src="https://media.vneconomy.vn/w800/images/upload/2025/04/06/ba-nguyen-thi-huong.jpg" alt="Ảnh mô tả">
+      <figcaption><em>Việt Nam vẫn có nhiều lợi thế để thu hút đầu tư nước ngoài, và việc củng cố những lợi thế này là
+          rất quan trọng trong bối cảnh hiện tại.</em></figcaption>
+    </figure>
+
+    <p>Thưa bà, bà nhận định thế nào về mức tăng trưởng GDP đạt được trong quý 1/2025? Mức tăng trưởng này có đúng như
+      kịch bản dự kiến đầu năm?</p>
+
+    <p>GDP cả nước quý 1/2025 đạt tăng trưởng 6,93% so với cùng kỳ năm trước, đây là một kết quả khá khả quan nếu nhìn
+      vào bức tranh kinh tế thế giới với nhiều bất ổn. Mức tăng trưởng này chỉ thấp hơn so với cùng kỳ năm 2018 và 2019
+      kể từ năm 2011 đến nay.</p>
+
+    <p>Chúng ta thấy sự tăng trưởng ở cả ba khu vực: nông, lâm nghiệp và thủy sản đạt 3,74%; công nghiệp và xây dựng đạt
+      7,42%; và dịch vụ đạt 7,70%.</p>
+
+    <p>Trong đó, khu vực nông, lâm nghiệp và thủy sản duy trì đà tăng trưởng tốt nhờ các cây trồng lâu năm, chăn nuôi ổn
+      định và sự phát triển của ngành thủy sản. Đặc biệt, khu vực công nghiệp và xây dựng có sự phục hồi rõ nét, với
+      điểm sáng là công nghiệp chế biến, chế tạo tăng trưởng ấn tượng 9,28%. Khu vực dịch vụ cũng đóng góp lớn vào tăng
+      trưởng chung với mức tăng 7,70%, được thúc đẩy bởi các ngành như bán buôn và bán lẻ, dịch vụ lưu trú và ăn uống,
+      vận tải kho bãi.</p>
+
+    <p>Tuy nhiên, mức tăng trưởng 6,93% vẫn thấp hơn so với mục tiêu 7,7% đề ra trong Nghị quyết 01/NQ-CP ứng với kịch
+      bản GDP đạt 8%. Một số ngành tăng trưởng không như kỳ vọng, chẳng hạn như sản xuất và phân phối điện (tăng 4,6%,
+      thấp hơn 6,1 điểm phần trăm), khai khoáng (giảm 5,76%, thấp hơn 4,6 điểm phần trăm), dịch vụ lưu trú ăn uống (tăng
+      9,31%, thấp hơn hơn 2,4 điểm phần trăm), xây dựng (tăng 7,99%, thấp hơn 2,5 điểm phần trăm) và y tế (tăng 3,56%,
+      thấp hơn 2,1 điểm phần trăm).</p>
+
+    <p>Ngược lại, một số ngành lại có kết quả tốt hơn dự kiến như tài chính ngân hàng, bảo hiểm, hoạt động hành chính và
+      dịch vụ hỗ trợ, giáo dục và đào tạo. Việc tăng trưởng quý 1/2025 thấp hơn mục tiêu sẽ tạo áp lực không nhỏ lên các
+      quý tiếp theo, đặc biệt khi bối cảnh thế giới vẫn còn nhiều thách thức. Thông tin Mỹ công bố mức thuế đối ứng 46%
+      đối với hàng hóa nhập khẩu từ Việt Nam vào ngày 3/4/2025 cũng là một yếu tố bất lợi lớn cho xuất nhập khẩu, gây
+      thêm khó khăn cho mục tiêu tăng trưởng cả năm.</p>
+
+    <p>Bà có thể phân tích rõ hơn về động lực đóng góp vào tăng trưởng GDP quý này?</p>
+
+    <p>Tăng trưởng kinh tế quý 1/2025 được hỗ trợ bởi cả yếu tố từ phía cung và phía cầu.</p>
+
+    <p>Về phía cung, chúng ta thấy sự tăng tốc mạnh mẽ của hoạt động công nghiệp chế biến, chế tạo kể từ tháng 2/2025.
+      Ngành xây dựng cũng có mức tăng trưởng khá tốt nhờ sự đẩy mạnh giải ngân vốn đầu tư công. Tổng mức bán lẻ hàng hóa
+      và dịch vụ tiêu dùng tiếp tục hồi phục tích cực. Các ngành dịch vụ thị trường hỗ trợ du lịch cũng tăng mạnh do yếu
+      tố mùa vụ Tết Nguyên đán và các lễ hội. Thu ngân sách nhà nước cũng có sự tăng trưởng ấn tượng.</p>
+
+    <figure style="text-align: center;">
+      <img src="https://media.vneconomy.vn/images/upload/2025/04/06/screenshot-2025-04-06-085645.png" alt="Ảnh mô tả"
+        width="800">
+      <figcaption><em>QUÝ 1 NĂM 2025 </em></figcaption>
+    </figure>
+
+    <p>Về phía cầu, đầu tư công được tích cực giải ngân từ đầu năm. Thu hút FDI có nhiều tín hiệu tích cực với cả vốn
+      đăng ký và giải ngân đều tăng. Xuất khẩu tiếp tục tăng trưởng mạnh ở cả hàng hóa và dịch vụ. Tiêu dùng cuối cùng
+      cũng tăng trưởng ổn định, đặc biệt là tiêu dùng của Nhà nước. Bên cạnh đó, sự chỉ đạo sát sao và triển khai đồng
+      bộ các giải pháp của Chính phủ và Thủ tướng Chính phủ cũng đóng vai trò quan trọng trong việc thúc đẩy tăng trưởng
+      kinh tế.</p>
+
+    <p>Mới đây, Tổng thống Trump đã áp mức thuế 46% lên hàng hóa từ Việt Nam. Điều này, theo bà, sẽ ảnh hưởng thế nào
+      tới xuất nhập khẩu của Việt Nam trong thời gian tới khi xuất khẩu được xem là một trong những động lực đóng góp
+      chính vào tăng trưởng của Việt Nam thời gian qua?</p>
+
+    <p>Hoa Kỳ hiện là thị trường xuất khẩu lớn nhất của Việt Nam, chiếm khoảng 30% tổng kim ngạch xuất khẩu năm 2024.
+      Việc Mỹ áp mức thuế 46% lên hàng hóa từ Việt Nam chắc chắn sẽ gây ảnh hưởng tiêu cực đến hoạt động xuất khẩu và
+      nền kinh tế trong ngắn hạn.</p>
+
+    <p>Các mặt hàng gia công, lắp ráp như máy vi tính điện tử và linh kiện, máy móc thiết bị, điện thoại và linh kiện,
+      dệt may, giày dép, gỗ và sản phẩm gỗ sẽ chịu tác động nặng nề nhất. Tuy nhiên, mức độ tác động có thể khác nhau
+      giữa các nhóm hàng.</p>
+
+    <p>Đối với nhóm hàng điện tử, máy tính và linh kiện, điện thoại và linh kiện, máy móc thiết bị, do phần lớn kim
+      ngạch xuất khẩu thuộc về các doanh nghiệp FDI, họ có thể có khả năng phản ứng tốt hơn bằng cách chuyển dịch sản
+      xuất sang các quốc gia khác.</p>
+
+    <p>Trong khi đó, các nhà sản xuất trong nước ở các nhóm hàng như dệt may, giày dép, gỗ và sản phẩm gỗ có thể gặp
+      nhiều khó khăn hơn trong việc tìm kiếm thị trường thay thế, dẫn đến nguy cơ suy giảm kim ngạch xuất khẩu.</p>
+
+    <p>Bên cạnh đó, xuất khẩu một số mặt hàng nông sản như thủy sản và rau quả cũng sẽ bị ảnh hưởng trực tiếp.</p>
+
+    <p>Trong bối cảnh như vậy, bà dự báo như thế nào về sự dịch chuyển thương mại và đầu tư vào Việt Nam?</p>
+
+    <p>Việc Mỹ áp thuế cao có thể gây khó khăn cho sự dịch chuyển thương mại của Việt Nam sang các nước khác trong ngắn
+      hạn, vì cần thời gian để tìm kiếm và mở rộng thị trường mới.</p>
+
+    <p>Về đầu tư, mức thuế này có thể chưa gây ra sự suy giảm ngay lập tức dòng vốn FDI vào Việt Nam, vì mỗi quốc gia có
+      những lợi thế riêng. Tuy nhiên, trong dài hạn, nó có thể ảnh hưởng đến quyết định đầu tư của các nhà đầu tư nước
+      ngoài.</p>
+
+    <figure style="text-align: center;">
+      <img src="https://media.vneconomy.vn/w900/images/upload/2025/04/06/screenshot-2025-04-06-135904.png"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em> </em></figcaption>
+    </figure>
+    <p>Các nhà đầu tư hiện tại có thể phải đối mặt với chi phí tăng cao, giảm lợi nhuận và đơn hàng xuất khẩu, từ đó có
+      thể cân nhắc dịch chuyển một phần chuỗi cung ứng sang các quốc gia khác để phân tán rủi ro.</p>
+
+    <p>Đối với các nhà đầu tư mới đang tìm hiểu cơ hội tại Việt Nam, động thái này của Mỹ có thể khiến họ lo ngại về
+      tính bền vững của dòng vốn FDI và có thể tìm đến các quốc gia khác thay thế.</p>
+
+    <p>Theo đó, Tổng cục Thống kê có những khuyến nghị gì, thưa bà?</p>
+
+    <p>Trước tình hình này, Việt Nam cần tập trung vào việc ổn định chính sách, cải cách thủ tục hành chính và hải quan
+      để tạo môi trường kinh doanh thông thoáng và ổn định cho các nhà đầu tư. Nâng cao chất lượng nguồn nhân lực để đáp
+      ứng nhu cầu của các ngành công nghệ cao là yếu tố then chốt.</p>
+
+    <p>Bên cạnh đó, cần đẩy nhanh phát triển cơ sở hạ tầng đồng bộ và tăng cường các chính sách ưu đãi có chọn lọc, tập
+      trung vào các ngành công nghiệp có giá trị cao và bền vững.</p>
+
+    <p>Chính sách thương mại của Mỹ không chỉ nhắm vào Việt Nam mà còn đến các quốc gia có thặng dư thương mại lớn với
+      Mỹ, vì vậy, không có quốc gia nào là hoàn toàn an toàn. Việt Nam vẫn có nhiều lợi thế để thu hút đầu tư nước
+      ngoài, và việc củng cố những lợi thế này là rất quan trọng trong bối cảnh hiện tại.</p>
+
+
+  </div>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

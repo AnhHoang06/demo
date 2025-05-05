@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>trong nước </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+  <div class="divider-bar"></div>
+
+
+  <div class="tungtheloai">
+    <p id="each-title"> Trong nước </p>
+  </div>
+  <div class="divider-bar"></div>
+  <div class="figure-row">
+    <a href="trongnuoc1.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+
+        <img src="https://media.vneconomy.vn/w800/images/upload/2025/04/06/ba-nguyen-thi-huong.jpg" alt="Ảnh mô tả"
+          width="800">
+        <figcaption class="news-content">
+          <h3> Tăng trưởng GDP quý 1/2025 khả quan nhưng vẫn còn nhiều thách thức</h3>
+          <em>Việt Nam vẫn có nhiều lợi thế để thu hút đầu tư nước ngoài, và việc củng cố những lợi thế này là rất quan
+            trọng trong bối cảnh hiện tại.</em>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="trongnuoc2.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+
+        <img
+          src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/4/13/s2-1744434397122-30604.jpg?width=0&s=dUs-QDmb232ACebQeVdP-A"
+          alt="Ảnh mô tả">
+        <figcaption class="news-content">
+          <h3>Vụ sản xuất sữa bột giả, thu lợi 500 tỷ đồng: Tạm giam các giám đốc</h3>
+          <em>Công nhân đóng hộp thành phẩm sữa bột tại cơ sở sản xuất, chuẩn bị tung ra thị trường. Ảnh: Báo Công an
+            nhân dân</em>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="trongnuoc3.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+
+        <img src="https://i.ex-cdn.com/theleader.vn/files/news/2025/04/13/img0927-17444520889411209501508-0034.jpg"
+          alt="Ảnh mô tả" width="800">
+        <figcaption class="news-content">
+          <h3> Trung ương Đảng thống nhất sắp xếp lại bộ máy hành chính, còn 34 tỉnh</h3>
+          <em>Hội nghị lần thứ 11 Ban Chấp hành Trung ương Đảng khóa XIII. Ảnh: Nhật Bắc</em>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="trongnuoc4.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+        <img
+          src="https://i1-vnexpress.vnecdn.net/2025/04/20/1-JPG-7144-1745125532.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=NIICq8OcEkBNITczOfTw5Q"
+          alt="Ảnh mô tả" width="800">
+        <figcaption class="news-content">
+          <h3> Hơn 740 nhân viên tỉnh Thái Nguyên, Bắc Kạn xin nghỉ</h3>
+          <em>Nhà hát Ca múa nhạc dân gian Việt Bắc, Thái Nguyên. Ảnh: Ngọc Thành</em>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="trongnuoc5.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+        <img
+          src="https://i1-vnexpress.vnecdn.net/2025/04/13/381e81590042b31cea53-174450806-5350-2874-1744508314.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=VuaEChrMszonYWCW0de6yQ"
+          alt="Ảnh mô tả">
+        <figcaption class="news-content">
+          <h3>Đề nghị dỡ bỏ thanh chắn trên vỉa hè TP HCM</h3>
+          <em>Thanh chắn lắp trên đường Lý Tự Trọng, quận 1. Ảnh: Quỳnh Trần</em>
+        </figcaption>
+      </figure>
+    </a>
+    <a href="trongnuoc6.html" style="text-decoration: none; color: inherit;">
+      <figure class="lietkebaobai">
+        <img
+          src="https://i1-vnexpress.vnecdn.net/2025/04/21/3-1745206337-2733-1745206377.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=jIc-aCKpcxlmJZ-gqqZWsw"
+          alt="Ảnh mô tả" width="800">
+        <figcaption class="news-content">
+          <h3> Tấm bản đồ chỉ đường cho bộ đội tiến về Sài Gòn ngày 30/4/1975</h3>
+          <em>Thượng tướng Nguyễn Huy Hiệu tại hội thảo khoa học đại thắng mùa xuân 1975 với kỷ nguyên phát triển mới
+            của dân tộc Việt Nam, ngày 20/4. Ảnh: An Phương</em>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+<footer class="footer">
+  <hr>
+  <div class="contactcontact">
+    <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+    <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+    <a href="#">Liên hệ : 09 xxx xxx </a>
+  </div>
+  <p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

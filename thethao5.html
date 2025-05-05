@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>thể thao</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+  <div class="tieude">
+    <h1>'Huyền thoại cờ tướng' Hứa Ngân Xuyên tái xuất</h1>
+    <p><strong>Tác giả:</strong>Xuân Bình</p>
+    <p><strong>Ngày đăng:</strong>Thứ hai, 14/4/2025, 20:00 (GMT+7)</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+    <p>Kỳ thủ sáu lần vô địch cờ tướng Trung Quốc, Hứa Ngân Xuyên trở lại thi đấu tại giải Ngũ Dương 2025, dù từng tuyên
+      bố giải nghệ.</p>
+
+    <p>Ngũ Dương Bôi (Cup Ngũ Dương) diễn ra thường niên từ năm 1981, là giải hàng đầu Trung Quốc, ban đầu chỉ quy tụ
+      những nhà vô địch cá nhân quốc gia. Sau thời gian gián đoạn từ năm 2010 đến 2022, giải trở lại năm 2023 với chức
+      vô địch thuộc về Trịnh Duy Đồng. Giải năm ngoái bị hủy vì vụ án mua bán độ rung chuyển làng cờ Trung Quốc, nhưng
+      sẽ trở lại trong năm nay.</p>
+
+    <p>Sau 30 kỳ tổ chức, Lữ Khâm giàu thành tích nhất giải với 11 danh hiệu, sau đó đến Ngân Xuyên (7), Hồ Vinh Hoa
+      (6), Liễu Đại Hoa (2), Lý Lai Quần, Triệu Quốc Vinh, Hồng Trí và Duy Đồng (1).</p>
+
+
+
+    <figure style="text-align: center;">
+      <img
+        src="https://i1-thethao.vnecdn.net/2025/04/14/hu-a-nga-n-xuye-n-1744634609-1-9038-7502-1744634750.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=TxRGB_CGRqVx3FAoX97ehA"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Huyền thoại cờ tướng Hứa Ngân Xuyên. Ảnh: ycwb</em></figcaption>
+    </figure>
+
+    <p>Hứa Ngân Xuyên sinh ngày 5/8/1975, trở thành kỳ vương ở tuổi 18. Ông đã sáu lần vô địch quốc gia, thành tích chỉ
+      sau Vinh Hoa với 14 danh hiệu. Ông giải nghệ năm 2022, dù phong độ vẫn thuộc nhóm đầu. Nhưng khi toàn bộ kỳ vương
+      Trung Quốc thế hệ sinh năm 1980 trở lại đây bị cấm thi đấu vì mua bán độ, Ngân Xuyên quyết định tái xuất.</p>
+
+    <p>Phát biểu trong họp báo công bố giải hôm 11/4, Ngân Xuyên nói: "Tôi đã rời xa cờ tướng đỉnh cao một thời gian nên
+      kỹ năng không tránh khỏi bị rỉ sét. Nhưng tôi cảm thấy tham gia giải đấu vào lúc này là trách nhiệm của một cựu
+      chiến binh Ngũ Dương".</p>
+
+    <p>Ngũ Dương Bôi năm nay diễn ra tại công viên văn hóa Quảng Châu, tỉnh Quảng Đông, chia làm hai bảng. Một bảng dành
+      cho những nhà vô địch cá nhân quốc gia, trong đó có Ngân Xuyên. Nhiều khả năng bảng này còn có những kỳ vương từ
+      60 tuổi trở lên như Lý Lai Quần, Lữ Khâm, Triệu Quốc Vinh, Đào Hán Minh và Vu Ấu Hoa. Các kỳ vương sẽ thi đấu từ
+      5/5 đến 8/5 để chọn ra hai người vào vòng chung kết.</p>
+
+    <p>Bảng còn lại cho phép các kỳ thủ là VĐV cấp một trở lên tham dự, thi đấu từ 28/4 đến 8/5 để chọn ra sáu người vào
+      vòng chung kết.</p>
+
+    <p>Vòng chung kết gồm tám kỳ thủ từ 9/5 đến 11/5, tranh giải nhất trị giá 200.000 tệ (hơn 700 triệu đồng).</p>
+
+    <p>Ngũ Dương Bôi là siêu giải đầu tiên của làng cờ tướng Trung Quốc, kể từ khi một loạt kỳ vương như Vương Thiên
+      Nhất, Duy Đồng, Triệu Hâm Hâm hay Uông Dương bị cấm thi đấu trọn đời.</p>
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>

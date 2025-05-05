@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài báo ngẫu nhiên</title>
+  <style>
+    .random-articles-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 800px; /* Giới hạn chiều rộng khung */
+  margin: auto;
+  background-color: #fafafa;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.random-articles-wrapper h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.article-card {
+  width: 30%;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s;
+  font-size: 14px;
+}
+
+.article-card:hover {
+  transform: scale(1.02);
+}
+
+.article-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.article-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.article-time {
+  font-size: 12px;
+  color: #777;
+  margin: 0 8px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .article-card {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article-card {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="random-articles-wrapper">
+    <h3>📰 Bài viết nổi bật</h3>
+    <div id="random-articles" class="articles-container"></div>
+  </div>
+  
+
+  <script>
+    const allArticles = [
+      {
+        title: "Tăng trưởng GDP quý 1/2025 khả quan nhưng vẫn còn nhiều thách thức",
+        link: "trongnuoc1.html",
+        category: "Trong nước",
+        image: "https://media.vneconomy.vn/w800/images/upload/2025/04/06/ba-nguyen-thi-huong.jpg",
+        time: " 06/04/2025 16:00"
+      },
+      {
+        title: "Vụ sản xuất sữa bột giả, thu lợi 500 tỷ đồng: Tạm giam các giám đốc",
+        link: "trongnuoc2.html",
+        category: "Trong nước",
+        image: "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/4/13/s2-1744434397122-30604.jpg?width=0&s=dUs-QDmb232ACebQeVdP-A",
+        time: "13/04/2025 08:16"
+      },
+      {
+        title: "Trung ương Đảng thống nhất sắp xếp lại bộ máy hành chính, còn 34 tỉnh",
+        link: "trongnuoc3.html",
+        category: "Trong nước",
+        image: "https://i.ex-cdn.com/theleader.vn/files/news/2025/04/13/img0927-17444520889411209501508-0034.jpg",
+        time: "13/04/2025 10:17"
+      },
+      {
+        title: "Hơn 740 nhân viên tỉnh Thái Nguyên, Bắc Kạn xin nghỉ",
+        link: "trongnuoc4.html",
+        category: "Trong nước",
+        image: "https://i1-vnexpress.vnecdn.net/2025/04/20/1-JPG-7144-1745125532.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=NIICq8OcEkBNITczOfTw5Q",
+        time: "20/4/2025 09:51"
+      },
+      {
+        title: "Đề nghị dỡ bỏ thanh chắn trên vỉa hè TP HCM",
+        link: "trongnuoc5.html",
+        category: "Trong nước",
+        image: "https://i1-vnexpress.vnecdn.net/2025/04/13/381e81590042b31cea53-174450806-5350-2874-1744508314.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=VuaEChrMszonYWCW0de6yQ",
+        time: "13/4/2025 08:40"
+      },
+      {
+        title: "Tấm bản đồ chỉ đường cho bộ đội tiến về Sài Gòn ngày 30/4/1975",
+        link: "trongnuoc6.html",
+        category: "Trong nước",
+        image: "https://i1-vnexpress.vnecdn.net/2025/04/21/3-1745206337-2733-1745206377.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=jIc-aCKpcxlmJZ-gqqZWsw",
+        time: "20/4/2025 19:08"
+      },
+      {
+        title: "Đỉnh cao của Aston Villa",
+        link: "thethao1.html",
+        category: "Thể thao",
+        image: "https://photo-baomoi.bmcdn.me/w700_r1/2025_04_07_119_51915540/bd72b455dc1b35456c0a.jpg.avif",
+        time: "7/4/2025 10:00"
+      },
+      {
+        title: "U17 UAE thiệt quân trước trận tranh vé World Cup với U17 Việt Nam",
+        link: "thethao2.html",
+        category: "Thể thao",
+        image: "https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/4/8/u17-uae-101132.jpg?width=0&s=q6WRfYwrVcGkhHiwzOwkbQ",
+        time: " 08/04/2025 19:27"
+      },
+      {
+        title: "Tin tối 8/4: Nỗi buồn thất nghiệp của HLV Shin Tae Yong",
+        link: "thethao3.html",
+        category: "Thể thao",
+        image: "https://ss-images.saostar.vn/2025/4/8/pc/1744115545661/9pnucoa4hx1-dfja8glg3e2-zsuukdo0jd3.jpeg",
+        time: "08/04/2025 19:39"
+      },
+      {
+        title: "Đồng Nai thắng lớn ở chặng 13 giải xe đạp xuyên Việt",
+        link: "thethao4.html",
+        category: "Thể thao",
+        image: "https://i1-thethao.vnecdn.net/2025/04/17/491756740-1237460445046820-619-9562-7989-1744874225.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=ecm8qmmaDYSArXFXFcuZPw",
+        time: "17/4/2025 14:26"
+      },
+      {
+        title: "'Huyền thoại cờ tướng' Hứa Ngân Xuyên tái xuất",
+        link: "thethao5.html",
+        category: "Thể thao",
+        image: "https://via.placeholder.com/600x400?text=H%C3%B3a+Ng%C3%A2n+Xuy%C3%AAn",
+        time: "14/4/2025 20:00 "
+      },
+      {
+        title: "'Hotgirl vượt rào' Mỹ Tiên thắng dễ ở Cup Tốc độ",
+        link: "thethao6.html",
+        category: "Thể thao",
+        image: "https://i1-thethao.vnecdn.net/2025/04/16/dong7436-jpg-4919-1744783990-1-3064-3104-1744785519.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=cYYJ4wskpjEo4yDW7Wsv8g",
+        time: "16/4/2025 13:39 "
+      },
+    ];
+
+    function getRandomArticles(list, count) {
+      const shuffled = [...list].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+
+    function displayArticles(articles) {
+      const container = document.getElementById("random-articles");
+      container.innerHTML = "";
+
+      articles.forEach(article => {
+        const articleHTML = `
+          <div class="article-card">
+            <a href="${article.link}">
+              <img src="${article.image}" alt="${article.title}">
+              <div class="article-title">${article.title}</div>
+              <div class="article-time">${article.time}</div>
+            </a>
+          </div>
+        `;
+        container.innerHTML += articleHTML;
+      });
+    }
+
+    const randomArticles = getRandomArticles(allArticles, 15);
+    displayArticles(randomArticles);
+  </script>
+
+</body>
+</html>

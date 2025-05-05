@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>thể thao</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<style>
+  #sidebar-random-articles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  #sidebar-random-articles .article-card {
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #sidebar-random-articles .article-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  #sidebar-random-articles .article-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  #sidebar-random-articles .article-time {
+    font-size: 12px;
+    color: #555;
+    padding: 0 6px 6px 6px;
+  }
+  </style>
+<body>
+  <div class="head-container">
+    <div><a href="index.html"><button class="trangchu"><img src="91ef41f967a8d4f68db9.jpg"
+            height="50px"></button></a></div>
+    <form class="findbox" action="searchpage.html" method="GET">
+      <input class="findinput" type="text" name="query" placeholder="Tìm kiếm...">
+      <button class="findbutton" type="submit">Tìm 🔎</button>
+    </form>
+    <div class="account-container">
+      <button class="account-button" onclick="toggleAccountMenu()">👤</button>
+      <div class="account-menu" id="accountMenu">
+        <a class="dangnhap" href="sign-in.html">Đăng nhập</a>
+        <a class="dangki" href="register.html">Đăng kí</a>
+        <a class="lienhe" href="contactpage.html"> Liên hệ</a>
+      </div>
+    </div>
+  </div>
+  <div class="divider-bar"></div>
+
+  <table class="buttonnews">
+    <th>
+      <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+          <div class="menu-icon"></div>
+        </button>
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-column">
+            <h4>Thời sự</h4>
+            <a href="#">Chính trị</a>
+            <a href="#">Nhân sự</a>
+            <a href="#">Kỷ nguyên mới</a>
+          </div>
+          <div class="mega-column">
+            <h4>Thế giới</h4>
+            <a href="#">Tư liệu</a>
+            <a href="#">Phân tích</a>
+            <a href="#">Người Việt 5 châu</a>
+          </div>
+          <div class="mega-column">
+            <h4>Kinh doanh</h4>
+            <a href="#">NetZero</a>
+            <a href="#">Quốc tế</a>
+            <a href="#">Doanh nghiệp</a>
+          </div>
+          <div class="mega-column">
+            <h4>Công nghệ</h4>
+            <a href="#">AI</a>
+            <a href="#">Chuyển đổi số</a>
+          </div>
+          <!-- Thêm các cột khác nếu muốn -->
+        </div>
+      </div>
+    </th>
+    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+    <th><a href="tonghopcongnghe.html"><button class="news">Công nghệ</button></a></th>
+  </table>
+
+
+
+
+
+
+
+  <div class="tieude">
+    <h1>Tin tối 8/4: Nỗi buồn thất nghiệp của HLV Shin Tae Yong</h1>
+    <p><strong>Tác giả:</strong>Bá Hổ</p>
+    <p><strong>Ngày đăng:</strong>08/04/2025 - 19:39 (GMT+7)</p>
+  </div>
+
+
+
+
+
+  <div class="baibao">
+
+    <p>Tình cảnh của HLV Shin Tae Yong có thể nói là khá buồn khi ông rời đi mà vẫn chưa tìm được việc mới thì bóng đá
+      Indonesia lại “cất cánh”.</p>
+
+    <h1>HLV Shin Tae Yong chưa có việc mới</h1>
+
+    <p>Sau khi Indonesia giành vé dự U17 World Cup 2025, HLV Shin Tae Yong lại được truyền thông Indonesia nhắc đến.
+      Điều này xuất phát từ việc HLV Nova Arianto của U17 Indonesia từng là trợ lý của HLV Shin Tae Yong. Tuy nhiên, có
+      lẽ câu chuyện này không mang lại niềm vui cho HLV Shin Tae Yong, bởi ông đã bị sa thải, nhưng bóng đá Indonesia
+      lại đang thăng hoa. Đây có thể xem là nỗi buồn của ông.</p>
+    <p>Về phần HLV Shin Tae Yong, ông đã lần đầu tiết lộ rõ về tình cảnh thất nghiệp của mình, điều này cũng dập tắt
+      những tin đồn về tương lai của ông cùng bóng đá Indonesia.</p>
+
+    <figure style="text-align: center;">
+      <img src="https://ss-images.saostar.vn/2025/4/8/pc/1744115545661/9pnucoa4hx1-dfja8glg3e2-zsuukdo0jd3.jpeg"
+        alt="Ảnh mô tả" width="800">
+      <figcaption><em>Tình cảnh của HLV Shin Tae Yong có thể nói là khá buồn khi ông rời đi mà vẫn chưa tìm được việc
+          mới thì bóng đá Indonesia lại “cất cánh”. Ảnh: Shin Tae Yong</em></figcaption>
+    </figure>
+
+    <p>Chia sẻ với truyền thông Hàn Quốc sau khi trở về từ Indonesia, HLV Shin Tae Yong khẳng định rằng bản thân ông vẫn
+      chưa có công việc mới. Cựu HLV tuyển Indonesia đã phủ nhận việc trở lại xứ vạn đảo để cầm quân với thông báo không
+      nhận được lời mời nào từ Indonesia.</p>
+
+    <p>HLV Shin Tae Yong cũng không tiết lộ về việc có đội nào đã liên hệ với ông để mời làm việc. HLV người Hàn Quốc
+      cho biết ông muốn nghỉ ngơi và hy vọng nhận được lời mời từ một đội bóng tốt.</p>
+
+    <p>Về HLV Nova Arianto, HLV Shin Tae Yong đã không ngớt lời khen ngợi. “Nova Arianto là HLV Indonesia duy nhất làm
+      việc với tôi trong suốt 5 năm qua. Nova Arianto có tài năng và tôi tin rằng anh ấy sẽ có một tương lai tươi sáng”,
+      HLV Shin Tae Yong chia sẻ.</p>
+
+
+    <h1>U17 Việt Nam chuẩn bị cho trận gặp UAE </h1>
+
+    <p>Theo VFF, các cầu thủ U17 Việt Nam tiếp tục duy trì nhịp độ tập luyện và hồi phục thể trạng sau trận đấu với U17
+      Nhật Bản. Nhóm cầu thủ ít được thi đấu đã thực hiện các bài tập bổ trợ thể lực chuyên biệt tại phòng gym, nhằm
+      giúp duy trì phong độ và trạng thái sẵn sàng thi đấu.</p>
+
+    <p>Trong khi đó, nhóm cầu thủ đá chính của U17 Việt Nam được thả lỏng để phục hồi tại khu vực hồ bơi nhằm tái tạo
+      năng lượng và giảm áp lực lên cơ bắp sau trận đấu căng thẳng.</p>
+
+    <figure style="text-align: center;">
+      <img src="https://ss-images.saostar.vn/2025/4/8/pc/1744115545661/7mh61dol541-281x105qbv2-umuotib0z83.jpeg"
+        width="800" alt="Ảnh mô tả">
+      <figcaption><em>U17 Việt Nam chuẩn bị cho trận gặp UAE. Ảnh: VFF</em></figcaption>
+    </figure>
+    <p>Với tinh thần nghiêm túc và kỷ luật cao, toàn đội đang nỗ lực để có sự chuẩn bị tốt nhất cho trận đấu cuối vòng
+      bảng gặp U17 UAE, trận đấu mà thầy trò HLV Cristiano Roland buộc phải giành chiến thắng để mở ra cánh cửa đi tiếp
+      vào tứ kết.</p>
+
+    <p>Vào lúc 21h tối nay theo giờ Việt Nam, đội sẽ trở lại sân tập tại Taif.</p>
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <div class="divider-bar"></div>
+  <div class="random-articles-wrapper">
+    <h3 style="margin-left: 300px;">Bài viết khác</h3>
+    <div id="sidebar-random-articles" class="articles-container grid-1-column"></div>
+  </div>
+  <div class="comment-box">
+    <h3>Bình luận</h3>
+    <form>
+      <input type="text" placeholder="Nhập bình luận..." class="comment-input" />
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+<hr>
+<div class="contactcontact">
+  <a href="#">gmail : hoclamwed@gmail.com </a> <br>
+  <a href="#">face book : https://www.facebook.com/hoclamwed.demo </a> <br>
+  <a href="#">Liên hệ : 09 xxx xxx </a>
+</div>
+<p>&copy; 2025 Trang Web Mẫu. Bản quyền được bảo lưu.</p>
+</footer>
+</div>
+
+</html>
