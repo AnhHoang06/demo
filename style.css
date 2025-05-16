@@ -3,8 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: red;
 }
-
+.menu-stored{
+  background-color: #aaa;
+}
 .trangchu {
   display: flex;
   margin-right: 100px;
@@ -85,11 +88,12 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: none;
+  border: black solid;
   flex-grow: 1;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
+  max-height: 20%;
 }
 
 .news:hover {
@@ -453,10 +457,12 @@ summary::marker {
   width: 400px;
   height: 200px;
   display: flex;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: white;
+
 }
 
 .lietkebaobai:hover {

@@ -37,52 +37,58 @@
     </div>
   </div>
   <div class="divider-bar"></div>
-  <table class="buttonnews">
-    <th>
-      <div class="menu-container">
-        <button class="menu-button" onclick="toggleMenu()">
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
-          <div class="menu-icon"></div>
-        </button>
-        <div class="mega-menu" id="megaMenu">
-          <div class="mega-column">
-            <h4>Thời sự</h4>
-            <a href="#">Chính trị</a>
-            <a href="#">Nhân sự</a>
-            <a href="#">Kỷ nguyên mới</a>
+
+ <div class="menu-stored">
+    <table class="buttonnews">
+      <th>
+        <div class="menu-container">
+          <button class="menu-button" onclick="toggleMenu()">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+          </button>
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-column">
+              <h4>Thời sự</h4>
+              <a href="#">Chính trị</a>
+              <a href="#">Nhân sự</a>
+              <a href="#">Kỷ nguyên mới</a>
+            </div>
+            <div class="mega-column">
+              <h4>Thế giới</h4>
+              <a href="#">Tư liệu</a>
+              <a href="#">Phân tích</a>
+              <a href="#">Người Việt 5 châu</a>
+            </div>
+            <div class="mega-column">
+              <h4>Kinh doanh</h4>
+              <a href="#">NetZero</a>
+              <a href="#">Quốc tế</a>
+              <a href="#">Doanh nghiệp</a>
+            </div>
+            <div class="mega-column">
+              <h4>Công nghệ</h4>
+              <a href="#">AI</a>
+              <a href="#">Chuyển đổi số</a>
+            </div>
+            <!-- Thêm các cột khác nếu muốn -->
           </div>
-          <div class="mega-column">
-            <h4>Thế giới</h4>
-            <a href="#">Tư liệu</a>
-            <a href="#">Phân tích</a>
-            <a href="#">Người Việt 5 châu</a>
-          </div>
-          <div class="mega-column">
-            <h4>Kinh doanh</h4>
-            <a href="#">NetZero</a>
-            <a href="#">Quốc tế</a>
-            <a href="#">Doanh nghiệp</a>
-          </div>
-          <div class="mega-column">
-            <h4>Công nghệ</h4>
-            <a href="#">AI</a>
-            <a href="#">Chuyển đổi số</a>
-          </div>
-          <!-- Thêm các cột khác nếu muốn -->
         </div>
-      </div>
-    </th>
-    <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
-    <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
-    <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
-    <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
-    <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
-    <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
-    <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
-    <th><a href="tonghopcongnghe.html"><button class="news">Công nghê</button></a></th>
-  </table>
+      </th>
+      <th><a href="index.html"><button class="news">Trang chủ</button></a></th>
+      <th><a href="tonghoptrongnuoc.html"><button class="news">Trong nước</button></a></th>
+      <th><a href="tonghopthethao.html"><button class="news">Thể thao</button></a></th>
+      <th><a href="tonghopkhoahoc.html"><button class="news">Khoa học</button></a></th>
+      <th><a href="tonghopthegioi.html"><button class="news">Thế giới</button></a></th>
+      <th><a href="tonghopdulich.html"><button class="news">Du lịch</button></a></th>
+      <th><a href="tonghopsuckhoe.html"><button class="news">Sức khỏe</button></a></th>
+      <th><a href="tonghopcongnghe.html"><button class="news">Công nghê</button></a></th>
+    </table>
+  </div>
+
   <div class="divider-bar"></div>
+  <br>
+  <br>
   <div class="login-wrapper">
     <div class="login-container">
       <h1>Đăng ký</h1>
@@ -107,32 +113,45 @@
         <div id="signin-submit">
           <button type="submit" class="signin-submit">Đăng ký</button>
         </div>
+        <div id="error-message" style="color:red; display:none;">Mật khẩu không khớp!</div>
       </form>
-
-      <p id="error-message">Mật khẩu không khớp!</p>
       <br>
       <a href="sign-in.html" class="login-text">Bạn đã có tài khoản?</a>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
   <script>
     document.getElementById("register-form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Ngăn chặn gửi form mặc định
+  event.preventDefault(); // Ngăn gửi form thật
 
-      const password = document.getElementById("password").value;
-      const confirm = document.getElementById("confirm-password").value;
-      const errorMsg = document.getElementById("error-message");
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm-password").value;
+  const errorMsg = document.getElementById("error-message");
 
-      if (password !== confirm) {
-        errorMsg.style.display = "block";
-      } else {
-        errorMsg.style.display = "none";
-        alert("Đăng ký thành công!");
-        // Có thể gửi dữ liệu lên server ở đây
-        // this.submit(); // bỏ dấu // nếu muốn gửi form thật sự
-      }
+  if (password !== confirm) {
+    errorMsg.style.display = "block";
+  } else {
+    errorMsg.style.display = "none";
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Đăng ký thành công!',
+      text: `Xin chào, ${username}!`,
+      confirmButtonText: 'Về trang đăng nhập'
+    }).then(() => {
+      // Điều hướng hoặc xử lý thêm ở đây
+      window.location.href = "sign-in.html"; // hoặc đổi tuỳ ý
     });
+  }
+});
   </script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 <footer class="footer">
   <hr id="foot">

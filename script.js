@@ -1,32 +1,3 @@
-// ===================== MENU ĐIỀU HƯỚNG =====================
-
-// Toggle menu chính (3 gạch)
-function toggleMenu() {
-  const menu = document.getElementById('megaMenu');
-  menu.classList.toggle('show');
-}
-
-// Toggle menu tài khoản
-function toggleAccountMenu() {
-  const menu = document.getElementById('accountMenu');
-  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
-}
-
-// Đóng menu nếu click ra ngoài
-document.addEventListener('click', function (e) {
-  const megaMenu = document.getElementById('megaMenu');
-  const megaButton = document.querySelector('.menu-button');
-  if (megaMenu && megaButton && !megaButton.contains(e.target) && !megaMenu.contains(e.target)) {
-    megaMenu.classList.remove('show');
-  }
-
-  const accountMenu = document.getElementById('accountMenu');
-  const accountButton = document.querySelector('.account-button');
-  if (accountMenu && accountButton && !accountButton.contains(e.target) && !accountMenu.contains(e.target)) {
-    accountMenu.style.display = 'none';
-  }
-});
-
 
 // ===================== DỮ LIỆU BÀI VIẾT =====================
 
@@ -339,7 +310,34 @@ const allArticles = [
     time: "15/4/2025 05:00"
   }
 ];
+// ===================== MENU ĐIỀU HƯỚNG =====================
 
+// Toggle menu chính (3 gạch)
+function toggleMenu() {
+  const menu = document.getElementById('megaMenu');
+  menu.classList.toggle('show');
+}
+
+// Toggle menu tài khoản
+function toggleAccountMenu() {
+  const menu = document.getElementById('accountMenu');
+  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+}
+
+// Đóng menu nếu click ra ngoài
+document.addEventListener('click', function (e) {
+  const megaMenu = document.getElementById('megaMenu');
+  const megaButton = document.querySelector('.menu-button');
+  if (megaMenu && megaButton && !megaButton.contains(e.target) && !megaMenu.contains(e.target)) {
+    megaMenu.classList.remove('show');
+  }
+
+  const accountMenu = document.getElementById('accountMenu');
+  const accountButton = document.querySelector('.account-button');
+  if (accountMenu && accountButton && !accountButton.contains(e.target) && !accountMenu.contains(e.target)) {
+    accountMenu.style.display = 'none';
+  }
+});
 
 // ===================== TÌM KIẾM BÀI VIẾT =====================
 
@@ -394,7 +392,7 @@ function showResults() {
 // ===================== BÀI VIẾT MỚI NHẤT (SLIDER) =====================
 
 // ----------------------
-// 1. Parse thời gian bài viết
+// 1. parse thời gian bài viết
 // ----------------------
 function parseTime(str) {
   if (!str) return new Date(0);
@@ -504,6 +502,34 @@ function showSidebarArticles() {
   const randomArticles = getRandomArticles(allArticles, 3);
   displayArticlesTo("sidebar-random-articles", randomArticles);
 }
+
+// hiện popup khi login thành công
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username && password) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Successful!',
+        text: 'Đăng nhập thành công!',
+        confirmButtonText: 'OK'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Chuyển hướng sang trang chủ
+          window.location.href = 'index.html';
+        }
+      });
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Thất bại',
+        text: 'Vui lòng nhập đầy đủ thông tin!'
+      });
+    }
+  }
+
+
 
 // ----------------------
 // 7. Khởi chạy các hàm khi DOM sẵn sàng
